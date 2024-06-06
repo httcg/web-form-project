@@ -1,0 +1,62 @@
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 20px;
+    margin-top: 0;
+}
+
+h1{
+    margin: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+h2{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: 800000;
+    letter-spacing: 2;
+}
+
+.header {
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    padding: 20px;
+
+}
+
+   
+.forms {
+    background-color: E7CCCC;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000000e2;
+    border: #f5f5f5;
+    position: absolute;
+  
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-row label {
+    flex: 0 0 100px;
+    padding-right: 10px;
+  }
+  
+  .form-row input[type="text"],
+  .form-row input[type="date"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+    
