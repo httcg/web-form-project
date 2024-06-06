@@ -1,16 +1,16 @@
 
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     float: left;
-    margin: 20px;
-    margin-top: 0;
+    margin: 40px;
+    margin-top: 0px;
 }
 
 h1{
-    margin: 30px;
-    font-size: 14px;
+    margin: 40px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
@@ -19,44 +19,63 @@ h2{
     font-family:Arial, Helvetica, sans-serif;
     color: 800000;
     letter-spacing: 2;
+    padding-top: 40px;
 }
 
 .header {
     background-image: url(images/header.jpg);
-    background-size: cover;
-    padding: 20px;
-
+    background-size:cover;
+    padding: 50px;
+}
+.form-row1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: 800000;
+    letter-spacing: 2;
+    padding-top: 40px;
 }
 
-   
-.forms {
-    background-color: E7CCCC;
+.form-container {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+form {
+    background-color: #E7CCCC;
     border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    margin: 40px auto; 
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     color: #000000e2;
     border: #f5f5f5;
-    position: absolute;
-  
-  }
-  
-  .form-row {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    flex: 0 0 100%; 
+    display: flex;
     margin-bottom: 10px;
-  }
-  
-  .form-row label {
-    flex: 0 0 100px;
-    padding-right: 10px;
-  }
-  
-  .form-row input[type="text"],
-  .form-row input[type="date"] {
+    align-items: center;
+}
+
+.form-row label {
+    flex: 0.5 0 2px; 
+    padding-right: 2px;
+    padding-left: 40px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row input[type="number"] {
     flex: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-    
+    padding: 10px;
+    border: 1px;
+    border-radius: 8px;
+}
+
+.footer {
+    padding: 50px;
+    text-align: center;
+}

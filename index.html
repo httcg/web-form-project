@@ -1,17 +1,18 @@
 <html>
+
     <head>
         <title>
             PUP Office of Counseling and Psychological Services
         </title>
-
         <link rel="stylesheet" href="index.css" />
         <script src="index.js"></script>
     </head>
+
     <body>
       <div class="header">
         <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="Pup logo"></a></p>
         <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
-        The Country’s 1st Polytechnic University
+        The Country's 1st Polytechnic University
       </div>
       <div>
         <h2>
@@ -19,33 +20,100 @@
         </h2>
       </div>
 
- 
+      <div class="form-container">
+        <div class="form-row1">
+          <form>
+            <div class="form-row">
+              <label for="name">Fullname:</label>
+              <input type="text" id="name" name="name" placeholder="ex. Dela Cruz, Juan A." required>
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" min="0" max="100" required>
+              <label for="gender"> Gender:</label>
+              <input type="text" id="gender" name="gender" required>
+              <label for="civilstats"> Civil Status:</label>
+              <input type="text" id="civilstats" name="civilstats" required>
+            </div>
 
-      <div class="forms">
-        <form>
-          <div class="form-row">
-            <label for="name">Fullname:</label>
-            <input type="text" id="name" name="name" placeholder="ex. Dela Cruz, Juan A." required>
-          </div>
-          <div class="form-row">
-            <label for="name">Program:</label>
-            <input type="text" id="program" name="program" required>
-          </div>
-          <div class="form-row">
-            <label for="bidet">Birthdate:</label>
-            <input type="date" name="bidet" min="0000-01-01" max="2025-01-01">
-          </div>
-          <div class="form-row">
-            <label for="name">Place of issue: </label>
-            <input type="text" id="id-name" name="name" placeholder=" Location " required>
-          </div>
-          <div class="form-row">
-            <label for="name">Date of issue:</label>
-            
-          </div>
-      </div>
-     
+            <div class="form-row">
+              <label for="program">Program:</label>
+              <input type="text" id="program" name="program" required>
+              <label for="year">Year:</label>
+              <input type="text" name="year" min="1" max="5">
+              <label for="section">Section:</label>
+              <input type="text" id="section" name="name"  required>
+            </div>
+
+            <div class="form-row">
+              <label for="birthdate">Birthdate:</label>
+              <input type="date" id="birthday" name="issue-date" required>
+              <label for="birthplace">Place of Birth:</label>
+              <input type="text"  id="birthplace" name="placeofbirth" required>
+              <label for="email">Email address:</label>
+              <input type="email" id="email" name="email"  required>
+            </div>
+
+            <div class="form-row">
+              <label for="cityadd">City Address:</label>
+              <input type="text" id="cityadd" name="cityadd" required>
+              <label for="height">Height:</label>
+              <input type="text"  id="height" name="height" placeholder="in cm" required>
+              <label for="weight">Weight:</label>
+              <input type="text"  id="weight" name="weight" placeholder="in kg" required>
+              <label for="complexion">Complexion:</label>
+              <input type="text"  id="complexion" name="complexion" >
+            </div>
+
+            <div class="form-row">
+              <label for="provincialadd">Provincial Address:</label>
+              <input type="text" id="provincialadd" name="provincialadd" required>
+              <label for="telephone">Telephone no.:</label>
+              <input type="number"  id="telephone" name="telephone" required>
+              <label for="mobile">Mobile no.:</label>
+              <input type="number"  id="mobile" name="mobile" required>
+            </div>
+
+            <div class="form-row">
+              <label for="HSgwa">Highschool general weighted average:</label>
+              <input type="text" id="HSgwa" name="HSgwa" required>
+              <label for="religion">Religion:</label>
+              <input type="text"  id="religion" name="religion" required>
+            </div>
+
+            <div class="form-row">
+              <p>If working, please indicate the name and the address of the employer:</p>
+            </div>
+
+            <div class="form-row">
+              <label for="name">Fullname:</label>
+              <input type="text" id="name" name="name" placeholder="ex. Dela Cruz, Juan A." required>
+              <label for="add">Address:</label>
+              <input type="text" id="add" name="add" required>
+            </div>
+
+            <div class="form-row">
+              <p>Person to be contacted in case of accident or serious illness:</p>
+            </div>
+
+            <div class="form-row">
+              <label for="name">Fullname:</label>
+              <input type="text" id="name" name="name" placeholder="ex. Dela Cruz, Juan A." required>
+              <label for="add">Address:</label>
+              <input type="text" id="add" name="add" required>
         
-    
+            </div>
+
+            <div class="form-row">
+              <label for="relationship">Relationship:</label>
+              <input type="text" id="rs" name="relationship" >
+              <label for="contact">Contact no.:</label>
+              <input type="number"  id="contact" name="contact" >
+            </div>
+          </form>
+      </div>
+
+
+      <div class="footer">
+        <p>Copyright 2024</p>
+      </div>    
     </body>
 </html>
