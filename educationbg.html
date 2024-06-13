@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        PUP Office of Counseling and Psychological Services
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <body>
+        <div class="header">
+          <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="Pup logo"></a></p>
+          <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
+          The Country's 1st Polytechnic University
+        </div>
+        <div>
+          <h2>
+            INDIVIDUAL INVENTORY RECORD FORM
+          </h2>
+        </div>
+
+
+        <div class="form-container">
+            <div class="form-row1">
+              <form id="myForm" action="health.html" method="POST">
+                <div class="form-row">
+                  <label for="name">Fullname:</label>
+                  <input type="text" id="name" name="name" placeholder="ex. Dela Cruz, Juan A." required>
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" min="0" max="100" required>
+                  <label for="gender"> Gender:</label>
+                  <input type="text" id="gender" name="gender" required>
+                  <label for="civilstats"> Civil Status:</label>
+                  <input type="text" id="civilstats" name="civilstats" required>
+                </div>
+
+
+
+
+                <div class="form-row">
+                    <button type="submit" onclick="redirectToNextPage()">Submit and Go to Next Page</button> 
+                  </div>
+</body>
+</html>
