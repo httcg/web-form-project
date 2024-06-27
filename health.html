@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        PUP Office of Counseling and Psychological Services
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <body>
+        <div class="header">
+          <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="PUP Logo"></a></p>
+          <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
+          The Country's 1st Polytechnic University
+        </div>
+        <div>
+          <h2>
+            INDIVIDUAL INVENTORY RECORD FORM
+          </h2>
+        </div>
+
+
+        <div class="form-container">
+            <div class="form-row1">
+              <form id="myForm" action="family-bg.html" method="POST">
+                <h3>
+                  HEALTH INFORMATION
+                </h3>
+                <div class="form-row">
+                    <label for="father-name">Name of father:</label>
+                    <input type="text" id="father-name" name="name" placeholder="ex. Dela Cruz, Juan A." required>
+                    <label for="age">Age:</label>
+                    <input type="number" id="father-age" name="age" min="0" max="100" required>
+                    <label for="living">Living:</label>
+                    <input type="radio" id="living" name="status" value="living" required>
+                    <label for="deceased">Deceased:</label>
+                    <input type="radio" id="deceased" name="status" value="deceased" required>
+
+                    
+                  </div>
+
+
+
+
+                <div class="form-row">
+                    <button type="submit" onclick="redirectToFamilyPage()">Submit and Continue</button>  <!-- to change pa context -->
+                  </div> 
+
+              </form>
+            </div>
+        </div>       
+</body>
+</html>

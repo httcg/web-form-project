@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        PUP Office of Counseling and Psychological Services
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="header">
+    <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="PUP Logo"></a></p>
+    <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
+      The Country's 1st Polytechnic University
+    </div>
+    
+    <div>
+      <h2>
+        INDIVIDUAL INVENTORY RECORD FORM
+      </h2>
+    </div>
+    
+    <div class="form-container">
+      <div class="form-row1">
+        <form id="myForm" action="health.html" method="POST">
+          <h3>
+            EDUCATIONAL BACKGROUND
+          </h3>
+          
+          <div class="form-row">
+            <div class="form-row"> 
+              <label for="level">Level:</label> <select id="level" name="level" required> 
+                <option value="">Select Level</option> 
+                <option value="elementary">Elementary</option> 
+                <option value="junior-high">Junior High</option> 
+                <option value="senior-high">Senior High</option> 
+                <option value="college">College</option> 
+                <option value="graduate-studies">Graduate Studies</option> </select> 
+                    
+              <label for="schoolgrad">School Graduated:</label>
+              <input type="text" id="schoolgrad" name="school" placeholder="ex. ABC High School" required>
+                 
+              <label for="public">Public:</label>
+              <input type="radio" id="public" name="school-stat" value="public" required>
+              <label for="private">Private:</label>
+              <input type="radio" id="private" name="school-stat" value="private" required>
+            </div>
+          </div>
+          </form>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <button type="submit" onclick="redirectToHealthPage()">Submit and Continue</button> <!--to change yung context;submit/continue-->
+    </div>
+                      
+</body>
+</html>
