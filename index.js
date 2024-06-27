@@ -20,5 +20,5 @@ function redirectToInterestPage() {
 
 function redirectToTestResultsPage() { 
     document.getElementById("myForm").submit(); 
-    window.location.href = "test-resuts.html"; 
+    window.location.href = "test-results.html"; 
 }
