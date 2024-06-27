@@ -22,36 +22,100 @@
     
     <div class="form-container">
       <div class="form-row1">
-        <form id="myForm" action="family-info.html" method="POST">
+        <form id="myForm" action="test-results.html" method="POST">
           <h3>
-            EDUCATIONAL BACKGROUND
+            INTERESTS & HOBBIES
           </h3>
           
           <div class="form-row">
-            <div class="form-row"> 
-              <label for="level">Level:</label> <select id="level" name="level" required> 
-                <option value="">Select Level</option> 
-                <option value="elementary">Elementary</option> 
-                <option value="junior-high">Junior High</option> 
-                <option value="senior-high">Senior High</option> 
-                <option value="college">College</option> 
-                <option value="graduate-studies">Graduate Studies</option> </select> 
-                    
-              <label for="schoolgrad">School Graduated:</label>
-              <input type="text" id="schoolgrad" name="school" placeholder="ex. ABC High School" required>
-                 
-              <label for="public">Public:</label>
-              <input type="radio" id="public" name="school-stat" value="public" required>
-              <label for="private">Private:</label>
-              <input type="radio" id="private" name="school-stat" value="private" required>
-            </div>
+            <p>A. ACADEMIC</p>
+            <p> <br><br><br><br>Are you in any organization? check all that applies:</p>   
           </div>
+
+          <div class="form-row">
+            <input type="checkbox" id="math-club" name="math-club" value="math-club">
+            <label for="math-club">Math Club</label>
+            <input type="checkbox" id="english-club" name="english-club" value="english-club">
+            <label for="english-club">English Club</label>          
+          </div>
+          <div class="form-row">
+            <input type="checkbox" id="debate-club" name="debate-club" value="debate-club">
+            <label for="debate-club">Debate Club</label> 
+            <input type="checkbox" id="speech-club" name="speech-club" value="speech-club">
+            <label for="speech-club">Speech Club</label>  
+          </div>
+          <div class="form-row">
+            <input type="checkbox" id="science-club" name="science-club" value="science-club">
+            <label for="science-club">Science Club</label> 
+            <input type="checkbox" id="other-club" name="other-club" value="other-club">
+            <label for="other-club">other/s, please specify:</label>  
+          </div>
+          <div class="form-row">
+            <input type="checkbox" id="quizzer-club" name="quizzer-club" value="quizzer-club">
+            <label for="quizzer-club">Quizzer's Club</label> 
+
+            <input type="text" id="other-club" name="other-club" >
+          </div>
+
+
+          <div class="form-row">
+            <label for="fave-subject">What is/are your favorite subject/s?</label> 
+            <input type="text" id="fave-subject" name="fave-subject" >
+            <label for="least-fave-subject">What is /are the subject/s you like least?</label> 
+            <input type="text" id="least-fave-subject" name="least-fave-subject" >
+          </div>
+
+          <div class="form-row">
+            <p>B. EXTRACURRICULAR</p>
+            <p><br><br><br><br>What are your hobbies? Write them in the order of your preferences. </p>
+          </div>
+          <div class="form-row">
+            <ol>
+              <li>
+                <input type="text" name="hobby1" placeholder="Enter your 1st hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby2" placeholder="Enter your 2nd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby3" placeholder="Enter your 3rd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby4" placeholder="Enter your 3rd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby5" placeholder="Enter your 3rd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby6" placeholder="Enter your 1st hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby7" placeholder="Enter your 2nd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby8" placeholder="Enter your 3rd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby9" placeholder="Enter your 3rd hobby">
+              </li>
+              <li>
+                <input type="text" name="hobby10" placeholder="Enter your 3rd hobby">
+              </li>
+            </ol>
+          </div>
+         
+
+
+
+
+
+
           </form>
       </div>
     </div>
 
     <div class="form-row">
-      <button type="submit" onclick="redirectToFamilyPage()">Submit and Continue</button> <!--to change yung context;submit/continue-->
+      <button type="submit" onclick="redirectToTestResultsPage()">Submit and Continue</button> <!--to change yung context;submit/continue-->
     </div>
                       
 </body>

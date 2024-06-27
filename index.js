@@ -17,3 +17,8 @@ function redirectToInterestPage() {
     document.getElementById("myForm").submit(); 
     window.location.href = "interest-hobby-info.html"; 
 }
+
+function redirectToTestResultsPage() { 
+    document.getElementById("myForm").submit(); 
+    window.location.href = "test-resuts.html"; 
+}
