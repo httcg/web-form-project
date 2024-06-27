@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        PUP Office of Counseling and Psychological Services
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <body>
+        <div class="header">
+          <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="PUP Logo"></a></p>
+          <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
+          The Country's 1st Polytechnic University
+        </div>
+        <div>
+          <h2>
+            INDIVIDUAL INVENTORY RECORD FORM
+          </h2>
+        </div>
+
+
+        <div class="form-container">
+            <div class="form-row1">
+              <form id="myForm" action="health-info.html" method="POST">
+                <h3>
+                  FAMILY BACKGROUND
+                </h3>
+                <!--father'ssss-->
+                <div class="form-row">
+                    <label for="father-name">Name of father:</label>
+                    <input type="text" id="father-name" name="f-name" placeholder="ex. Dela Cruz, Juan A." required>
+                    <label for="age">Age:</label>
+                    <input type="number" id="father-age" name="f-age" min="0" max="100" required>
+                    <label for="living">Living:</label>
+                    <input type="radio" id="living" name="f-status" value="living" required>
+                    <label for="deceased">Deceased:</label>
+                    <input type="radio" id="deceased" name="f-status" value="deceased" required>
+                </div>
+                <div class="form-row">
+                    <label for="educational-attainment">Educational Attainment:</label>
+                    <input type="text" id="father-educ-attainment" name="father-educ-attainment" required>
+                    <label for="father-occupation">Occupation:</label>
+                    <input type="text" id="father-occupation" name="father-occupation"  required>
+                </div>
+                <div class="form-row">
+                    <label for="employer-name">Name of Employer:</label>
+                    <input type="text" id="father-employer-name" name="father-employer-name" required>
+                    <label for="employer-address">Address of Employer:</label>
+                    <input type="text" id="employer-address" name="employer-address"  required>
+                </div>
+
+                <!--mother'ssssssss-->
+                <div class="form-row">
+                  <label for="mother-name">Name of mother:</label>
+                  <input type="text" id="mother-name" name="m-name" placeholder="ex. Dela Cruz, Juan A." required>
+                  <label for="age">Age:</label>
+                  <input type="number" id="mother-age" name="m-age" min="0" max="100" required>
+                  <label for="living">Living:</label>
+                  <input type="radio" id="m-living" name="m-status" value="living" required>
+                  <label for="deceased">Deceased:</label>
+                  <input type="radio" id="m-deceased" name="m-status" value="deceased" required>
+              </div>
+              <div class="form-row">
+                  <label for="educational-attainment">Educational Attainment:</label>
+                  <input type="text" id="mother-educ-attainment" name="mother-educ-attainment" required>
+                  <label for="mother-occupation">Occupation:</label>
+                  <input type="text" id="mother-occupation" name="mother-occupation"  required>
+              </div>
+              <div class="form-row">
+                  <label for="m-employer-name">Name of Employer:</label>
+                  <input type="text" id="mother-employer-name" name="mother-employer-name" required>
+                  <label for="employer-address">Address of Employer:</label>
+                  <input type="text" id="mother-employer-address" name="mother-employer-address"  required>
+              </div>
+
+                <!--guardian'ssssssss-->
+                <div class="form-row">
+                  <label for="guardian-name">Name of guardian:</label>
+                  <input type="text" id="guardian-name" name="g-name" placeholder="ex. Dela Cruz, Juan A." required>
+                  <label for="age">Age:</label>
+                  <input type="number" id="guardia-age" name="g-age" min="0" max="100" required>
+                  <label for="living">Living:</label>
+                  <input type="radio" id="g-living" name="g-status" value="living" required>
+                  <label for="deceased">Deceased:</label>
+                  <input type="radio" id="g-deceased" name="g-status" value="deceased" required>
+              </div>
+              <div class="form-row">
+                  <label for="educational-attainment">Educational Attainment:</label>
+                  <input type="text" id="guardian-educ-attainment" name="guardian-educ-attainment" required>
+                  <label for="guardian-occupation">Occupation:</label>
+                  <input type="text" id="guardian-occupation" name="guardian-occupation"  required>
+              </div>
+              <div class="form-row">
+                  <label for="g-employer-name">Name of Employer:</label>
+                  <input type="text" id="guardian-employer-name" name="guardian-employer-name" required>
+                  <label for="employer-address">Address of Employer:</label>
+                  <input type="text" id="guardian-employer-address" name="guardian-employer-address"  required>
+              </div>
+
+
+              <div>
+                <p>
+                  PARENTS MARITAL RELATIONSHIP
+                </p>
+              </div>
+              <div class="form-row">
+                <label for="children-no">Number of children in the family including yourself:</label>
+                <input type="number" id="children-no" name="children-no" required>
+                <p>Is your brother/sister who is gainfully<br> employed providing support to your: </p>
+                <label for="support">family? </label>
+                <input type="radio" id="family-support" name="family-support"  required>
+                <label for="support">your studies? </label>
+                <input type="radio" id="family-support" name="family-support"  required>
+                <label for="support">his/her own family? </label>
+                <input type="radio" id="family-support" name="family-support"  required>    
+            </div>
+
+            <div class="form-row">
+              <label for="children-no">Number of brother/s:</label>
+              <input type="number" id="brother-no" name="brother-no" required>
+              <label for="children-no">Number of sister/s:</label>
+              <input type="number" id="brother-no" name="brother-no" required>
+            </div>
+            <div class="form-row">
+              <label for="finances-ur-school">Who finances your schooling?</label>
+              <input type="text" id="who-finances-u" name="who-finances-u" required>
+            </div>
+            <div class="form-row">
+              <label for="ur-allowance">State your allowance: </label>
+              <input type="number" id="allowance" name="allowance" required>
+            </div>
+            <div class="form-row">
+              <label for="parents-income">Parents total monthly income: </label>
+              <input type="number" id="parents-income" name="parents-income" required>
+            </div>
+
+            <div class="form-row">
+              <p>Do you have a quiet place to study? </p>
+              <label for="place-study">Yes </label>
+              <input type="radio" id="yes-place-study" name="place-study" required>
+              <label for="place-study">No </label>
+              <input type="radio" id="no-place-study" name="place-study" required>
+
+              <p>Do you share your room with anyone? </p>
+              <label for="shared-room">Yes </label>
+              <input type="radio" id="yes-shared-room" name="shared-room" required>
+              <label for="shared-room">No </label>
+              <input type="radio" id="no-shared-room" name="shared-room" required>
+            </div>
+
+            <div class="form-row">
+              <p>Nature of Residence while attending school:</p>
+              <ul>
+                <li>
+                  <input type="checkbox" id="family-home" name="residence" value="family_home">
+                  <label for="family-home">Family Home</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="bed-spacer" name="residence" value="bed_spacer">
+                  <label for="bed-spacer">Bed Spacer</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="married-siblings" name="residence" value="married_siblings">
+                  <label for="married-siblings">House of Married Brother/Sister</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="relatives-house" name="residence" value="relatives_house">
+                  <label for="relatives-house">Relative's House</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="rented-apartment" name="residence" value="rented_apartment">
+                  <label for="rented-apartment">Rented Apartment</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="dorm" name="residence" value="dorm">
+                  <label for="dorm">Dorm (including board & lodging)</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="shared-apartment" name="residence" value="shared_apartment">
+                  <label for="shared-apartment">Share Apartment with Friends/Relatives</label>
+                </li>
+              </ul>
+            </div>
+            
+
+
+
+                <div class="form-row">
+                    <button type="submit" onclick="redirectToHealthPage()">Submit and Continue</button>  <!-- to change pa context -->
+                  </div> 
+
+              </form>
+            </div>
+        </div>       
+</body>
+</html>
