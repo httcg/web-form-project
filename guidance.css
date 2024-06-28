@@ -77,74 +77,59 @@ header {
 }
 
 .navmenu li a {
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
 .navmenu li:hover {
   text-decoration: underline;
 }
 
-.home {
+.guidance {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
-  padding-bottom: 100px; /* Space for the footer */
+  min-height: 100vh; 
 }
 
-.home-text {
+.guidance-text {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: auto;
-}
-
-.home-text h2 {
-  font-size: 3rem;
-  margin-top: 150px;
-  margin-bottom: 5px;
   color: white;
+  padding: 0 20px; 
+  margin-bottom: 100px; 
 }
 
-.About,
-.Vision,
-.Mission,
-.Hymn {
-  margin-top: 30px;
-  padding: 30px;
-  color: rgba(128, 0, 0, 1);
-  background-color: rgba(231, 204, 204, 0.86);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 130%;
-  max-width: 800px;
+.guidance-text h2 {
+  font-size: 3rem;
+  margin-top: 30px; 
   margin-bottom: 10px;
 }
 
-.About span,
-.Vision span,
-.Mission span,
-.Hymn span {
-  font-weight: bold;
-  display: block;
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgba(170, 91, 91, 0.86);
+  font-weight: 500;
+  font-size: 12px;
   text-align: center;
-  font-size: 30px;
-  margin-bottom: 10px;
+  background: rgba(170, 91, 91, 0.86);
+  transition: all 0.5s;
+  margin-top: 20px;
 }
 
-.About p,
-.Vision p,
-.Mission p,
-.Hymn p {
-  text-align: justify;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.btn:hover {
+  background: rgba(185, 172, 172, 0.86);
+  border-color: rgba(185, 172, 172, 0.86);
+  color: #f7f7f2;
+  transform: translateY(5px);
 }
 
 footer {

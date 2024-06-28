@@ -1,3 +1,7 @@
+document.getElementById('answer-form').addEventListener('click', function() {
+    window.location.href = 'personal-info.html';
+  });  
+
 function redirectToNextPage() { 
     document.getElementById("myForm").submit(); 
     window.location.href = "educational-bg.html"; 

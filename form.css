@@ -1,0 +1,120 @@
+body{
+    align-items: left;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 40px;
+    margin-top: 0px;
+}
+
+h1{
+    margin: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+h2{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: 800000;
+    letter-spacing: 5;
+    padding-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #800000;
+    letter-spacing: 5px;
+    margin: 0; 
+    padding-top: 10px;
+    position: absolute;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.header {
+    background-image: url(images/header.jpg); /*hindi ko pa mablurhadhsadha*/
+    background-size:cover;
+    padding: 50px;
+}
+
+.form-row1{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: 800000;
+    letter-spacing: 2;
+    padding-top: 40px;
+}
+
+.form-container {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+form {
+    background-color: #E7CCCC;
+    border-radius: 20px;
+    margin: 40px auto; 
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000e2;
+    border: #f5f5f5;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    flex: 0 0 100%; 
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.form-row label {
+    flex: 0.5 0 2px; 
+    padding-right: 2px;
+    padding-left: 40px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px;
+    border-radius: 8px;
+}
+
+.footer {
+    padding: 50px;
+    text-align: center;
+}
+
+.form-row button {
+    position: absolute;
+    right: 150px; 
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-row button:hover {
+    background-color: #f13a3a; 
+}
