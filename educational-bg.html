@@ -1,62 +1,79 @@
 <!DOCTYPE html>
-<head>
-    <title>
-        PUP Office of Counseling and Psychological Services
-    </title>
-    <link rel="stylesheet" href="form.css" />
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUP Office of Counseling and Psychological Services</title>
+    <link rel="stylesheet" href="educational-bg.css" />
     <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
-  <div class="header">
-    <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="PUP Logo"></a></p>
-    <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
-      The Country's 1st Polytechnic University
-    </div>
-    
-    <div>
-      <h2>
-        INDIVIDUAL INVENTORY RECORD FORM
-      </h2>
-    </div>
-    
-    <div class="form-container">
-      <div class="form-row1">
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <div class="logo-container">
+          <img src="PUPLogo.png" alt="PUP Logo" class="logo" />
+          <div class="text-container">
+            <h4 class="name">Polytechnic University of the Philippines</h4>
+            <p class="tagline">The Country's 1st Polytechnic University</p>
+          </div>
+        </div>
+        <ul class="navmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guidance.html">Guidance</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+
+    <section id="form-section" class="form-section">
+      <div class="form-container">
         <form id="myForm" action="family-info.html" method="POST">
-          <h3>
-            EDUCATIONAL BACKGROUND
-          </h3>
-          
-          <div class="form-row">
-            <div class="form-row"> 
-              <label for="level">Level:</label> <select id="level" name="level" required> 
-                <option value="">Select Level</option> 
-                <option value="elementary">Elementary</option> 
-                <option value="junior-high">Junior High</option> 
-                <option value="senior-high">Senior High</option> 
-                <option value="college">College</option> 
-                <option value="graduate-studies">Graduate Studies</option> </select> 
-                    
-              <label for="schoolgrad">School Graduated:</label>
-              <input type="text" id="schoolgrad" name="school" placeholder="ex. ABC High School" required>
-                 
-              <label for="public">Public:</label>
-              <input type="radio" id="public" name="school-stat" value="public" required>
-              <label for="private">Private:</label>
-              <input type="radio" id="private" name="school-stat" value="private" required>
+          <h3>EDUCATIONAL BACKGROUND</h3>
+
+          <div id="educationRows">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="level">Level:</label>
+                <select class="level" name="level[]" required>
+                  <option value="">Select Level</option>
+                  <option value="elementary">Elementary</option>
+                  <option value="junior-high">Junior High</option>
+                  <option value="senior-high">Senior High</option>
+                  <option value="college">College</option>
+                  <option value="graduate-studies">Graduate Studies</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="schoolgrad">School Graduated:</label>
+                <input type="text" class="schoolgrad" name="school[]" placeholder="ex. ABC High School" required />
+              </div>
+              <div class="form-row type-options">
+                <label for="public">Public:</label>
+                <input type="radio" class="school-stat" name="school-stat[]" value="public" required />
+                <label for="private">Private:</label>
+                <input type="radio" class="school-stat" name="school-stat[]" value="private" required />
+              </div>
             </div>
           </div>
-          </form>
+
+          <div class="form-row">
+            <button type="button" class="add-button" onclick="addEducationRow()">Add</button>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" onclick="redirectToFamilyPage()">Submit and Continue</button>
+          </div>
+        </form>
       </div>
-    </div>
+    </section>
+  </div>
 
-    <div class="form-row">
-      <button type="submit" onclick="redirectToFamilyPage()">Submit and Continue</button> <!--to change yung context;submit/continue-->
-    </div>
+  <footer class="footer">
+    <p>&copy; 2024 PUP Office of Counseling and Psychological Services. All Rights Reserved.</p>
+  </footer>
 
-    <div class="footer">
-      <p>Copyright 2024</p>
-    </div> 
-                      
+  
 </body>
 </html>
+
+

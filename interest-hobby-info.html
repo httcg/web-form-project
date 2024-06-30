@@ -1,172 +1,149 @@
 <!DOCTYPE html>
-<head>
-    <title>
-        PUP Office of Counseling and Psychological Services
-    </title>
-    <link rel="stylesheet" href="form.css" />
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUP Office of Counseling and Psychological Services</title>
+    <link rel="stylesheet" href="interest-hobby-info.css" />
     <script src="index.js" defer></script>
-</head>
+  </head>
 
-<body>
-  <div class="header">
-    <p><a href="https://www.pup.edu.ph/"><img class="logo" src="images/PUPLogo.png" alt="PUP Logo"></a></p>
-    <h1>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES<br>
-      The Country's 1st Polytechnic University
-    </div>
-    
-    <div>
-      <h2>
-        INDIVIDUAL INVENTORY RECORD FORM
-      </h2>
-    </div>
-    
-    <div class="form-container">
-      <div class="form-row">
-        <form id="myForm" action="test-results.html" method="POST">
-          <h3>
-            INTERESTS & HOBBIES
-          </h3>
-          
-          <div class="form-row">
-            <p>A. ACADEMIC</p>
-            <p> <br><br><br><br>Are you in any organization? check all that applies:</p>   
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <div class="logo-container">
+          <img src="PUPLogo.png" alt="PUP Logo" class="logo" />
+          <div class="text-container">
+            <h4 class="name">Polytechnic University of the Philippines</h4>
+            <p class="tagline">The Country's 1st Polytechnic University</p>
           </div>
-
-          <div class="form-row">
-            <input type="checkbox" id="math-club" name="math-club" value="math-club">
-            <label for="math-club">Math Club</label>
-            <input type="checkbox" id="english-club" name="english-club" value="english-club">
-            <label for="english-club">English Club</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="debate-club" name="debate-club" value="debate-club">
-            <label for="debate-club">Debate Club</label> 
-            <input type="checkbox" id="speech-club" name="speech-club" value="speech-club">
-            <label for="speech-club">Speech Club</label>  
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="science-club" name="science-club" value="science-club">
-            <label for="science-club">Science Club</label> 
-            <input type="checkbox" id="other-club" name="other-club" value="other-club">
-            <label for="other-club">other/s, please specify:</label>  
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="quizzer-club" name="quizzer-club" value="quizzer-club">
-            <label for="quizzer-club">Quizzer's Club</label> 
-
-            <input type="text" id="other-club" name="other-club" >
-          </div>
+        </div>
+        <ul class="navmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guidance.html">Guidance</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
 
 
-          <div class="form-row">
-            <label for="fave-subject">What is/are your favorite subject/s?</label> 
-            <input type="text" id="fave-subject" name="fave-subject" >
-            <label for="least-fave-subject">What is /are the subject/s you like least?</label> 
-            <input type="text" id="least-fave-subject" name="least-fave-subject" >
-          </div>
+    <section class="form-section">
+        <div class="form-container">
+            
+            <form id="myForm" action="test-results.html" method="POST">
+                <h3>INTERESTS & HOBBIES</h3>
 
-          <div class="form-row">
-            <p>B. EXTRACURRICULAR</p>
-            <p><br><br><br><br>What are your hobbies? Write them in the order of your preferences. </p>
-          </div>
-          <div class="form-row">
-            <ol>
-              <li>
-                <input type="text" name="hobby1" placeholder="Enter your 1st hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby2" placeholder="Enter your 2nd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby3" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby4" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby5" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby6" placeholder="Enter your 1st hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby7" placeholder="Enter your 2nd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby8" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby9" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" name="hobby10" placeholder="Enter your 3rd hobby">
-              </li>
-            </ol>
-          </div>
-          
-          <div class="form-row">
-            <p>Which of the following organizations have you participated in and which interest you most?</p> 
-          </div>
+                <div class="form-row">
+                    <p>A. ACADEMIC</p>
+                    <p>Are you in any organization? Check all that applies:</p>
+                </div>
 
-          <div class="form-row">
-            <input type="checkbox" id="athletics" name="althletics" value="athletics">
-            <label for="athletics">Atheletics</label>
-            <input type="checkbox" id="geeclub" name="geeclub" value="geeclub">
-            <label for="geeclub">Geeclub</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="dramatics" name="dramatics" value="dramatics">
-            <label for="dramatics">Dramatics</label>
-            <input type="checkbox" id="scouting" name="scouting" value="scouting">
-            <label for="scouting">Scouting</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="religious-org" name="religious-org" value="religious-org">
-            <label for="religious-org">Religous Organization</label>
-            <input type="checkbox" id="other-interest" name="other-interest" value="other-interest">
-            <label for="other-interest">other/s, please specify:</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="chess-club" name="chess-club" value="chess-club">
-            <label for="chess-club">Chess Club</label>
-            <input type="text" id="other-interest" name="other-interest" >
-          </div>
+                <div class="form-row">
+                    <input type="checkbox" id="math-club" name="math-club" value="math-club">
+                    <label for="math-club">Math Club</label>
+                    <input type="checkbox" id="english-club" name="english-club" value="english-club">
+                    <label for="english-club">English Club</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="debate-club" name="debate-club" value="debate-club">
+                    <label for="debate-club">Debate Club</label>
+                    <input type="checkbox" id="speech-club" name="speech-club" value="speech-club">
+                    <label for="speech-club">Speech Club</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="science-club" name="science-club" value="science-club">
+                    <label for="science-club">Science Club</label>
+                    <input type="checkbox" id="other-club" name="other-club" value="other-club">
+                    <label for="other-club">Other/s, please specify:</label>
+                    <input type="text" id="other-club-text" name="other-club-text">
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="quizzer-club" name="quizzer-club" value="quizzer-club">
+                    <label for="quizzer-club">Quizzer's Club</label>
+                </div>
 
-          <div class="form-row">
-            <p>Occupational position in the organization:</p> 
-          </div>
-          <div class="form-row">
-            <ul>
-                <li>
-                  <input type="checkbox" id="officer" name="officer" value="officer">
-                  <label for="officer">officer</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="memeber" name="memeber" value="memeber">
-                  <label for="memeber">member</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="other-post" name="other-post" value="other-post">
-                  <label for="other-post">other/s please specify:
-                    <input type="text" id="other-post" name="other-post" >
+                <div class="form-row">
+                    <label for="fave-subject">What is/are your favorite subject/s?</label>
+                    <input type="text" id="fave-subject" name="fave-subject">
+                    <label for="least-fave-subject">What is/are the subject/s you like least?</label>
+                    <input type="text" id="least-fave-subject" name="least-fave-subject">
+                </div>
 
-                  </label>
-                </li>
-                
-              </ul>
-           </div>
-          
+                <div class="form-row">
+                    <p>B. EXTRACURRICULAR</p>
+                    <p>What are your hobbies? Write them in the order of your preferences.</p>
+                </div>
 
-          </form>
-      </div>
-    </div>
+                <div class="form-row">
+                    <ol>
+                        <li><input type="text" name="hobby1" placeholder="Enter your 1st hobby"></li>
+                        <li><input type="text" name="hobby2" placeholder="Enter your 2nd hobby"></li>
+                        <li><input type="text" name="hobby3" placeholder="Enter your 3rd hobby"></li>
+                        <li><input type="text" name="hobby4" placeholder="Enter your 4th hobby"></li>
+                        <li><input type="text" name="hobby5" placeholder="Enter your 5th hobby"></li>
+                        <li><input type="text" name="hobby6" placeholder="Enter your 6th hobby"></li>
+                        <li><input type="text" name="hobby7" placeholder="Enter your 7th hobby"></li>
+                        <li><input type="text" name="hobby8" placeholder="Enter your 8th hobby"></li>
+                        <li><input type="text" name="hobby9" placeholder="Enter your 9th hobby"></li>
+                        <li><input type="text" name="hobby10" placeholder="Enter your 10th hobby"></li>
+                    </ol>
+                </div>
 
-    <div class="form-row">
-      <button type="submit" onclick="redirectToTestResultsPage()">Submit and Continue</button> <!--to change yung context;submit/continue-->
-    </div>
-    <div class="footer">
+                <div class="form-row">
+                    <p>Which of the following organizations have you participated in and which interest you most?</p>
+                </div>
+
+                <div class="form-row">
+                    <input type="checkbox" id="athletics" name="athletics" value="athletics">
+                    <label for="athletics">Athletics</label>
+                    <input type="checkbox" id="geeclub" name="geeclub" value="geeclub">
+                    <label for="geeclub">Geeclub</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="dramatics" name="dramatics" value="dramatics">
+                    <label for="dramatics">Dramatics</label>
+                    <input type="checkbox" id="scouting" name="scouting" value="scouting">
+                    <label for="scouting">Scouting</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="religious-org" name="religious-org" value="religious-org">
+                    <label for="religious-org">Religious Organization</label>
+                    <input type="checkbox" id="other-interest" name="other-interest" value="other-interest">
+                    <label for="other-interest">Other/s, please specify:</label>
+                    <input type="text" id="other-interest-text" name="other-interest-text">
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="chess-club" name="chess-club" value="chess-club">
+                    <label for="chess-club">Chess Club</label>
+                </div>
+
+                <div class="form-row">
+                    <p>Occupational position in the organization:</p>
+                </div>
+
+                <div class="form-row">
+                    
+                        <li><input type="checkbox" id="officer" name="officer" value="officer">
+                            <label for="officer">Officer</label></li>
+                        <li><input type="checkbox" id="member" name="member" value="member">
+                            <label for="member">Member</label></li>
+                        <li><input type="checkbox" id="other-post" name="other-post" value="other-post">
+                            <label for="other-post">Other/s, please specify:</label>
+                            <input type="text" id="other-post-text" name="other-post-text">
+                        </li>
+                    
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" onclick="redirectToTestResultsPage()">Submit and Continue</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
         <p>Copyright 2024</p>
-      </div> 
-                      
+    </footer>
+
 </body>
+
 </html>
