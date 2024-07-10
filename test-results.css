@@ -101,64 +101,39 @@ header {
   color: white;
   border-radius: 10px;
   padding: 1rem;
-  width: 90%; /* Adjust the width as per your preference */
-  max-width: 800px; /* Set a max-width to prevent it from getting too wide on larger screens */
-  margin: 20px auto; /* Center the form container and provide some margin */
-  box-shadow: 0 0 20px rgba(0 0 20px rgba(0, 0, 0, 0.1)); /* Add box shadow for depth */
-  
-  
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .form-row1 {
-  margin-bottom: 20px; /* Adjust spacing between form rows */
+  margin-bottom: 20px;
 }
 
 .form-row {
-  margin-bottom: 10px; /* Adjust spacing between form rows */
+  margin-bottom: 10px;
   display: flex;
-  align-items: center; /* Align items vertically */
-  flex-wrap: wrap; /* Allow items to wrap */
+  align-items: center;
 }
 
 .form-row label {
   margin-bottom: 5px;
   font-weight: 500;
   color: white;
-  flex: 1; /* Allow label to take full width */
+  flex: 1;
 }
 
 .form-row input,
 .form-row select,
 .form-row textarea {
   padding: 0.5rem;
-  width: auto; /* Adjust width as necessary */
+  width: auto;
   border: none;
   border-radius: 5px;
   background-color: white;
   color: rgb(82, 79, 79);
-  margin-right: 10px; /* Add spacing between input and label */
-}
-
-.form-row input[type="checkbox"],
-.form-row input[type="radio"] {
-  margin-right: 10px; /* Add space between checkbox and label */
-  transform: translateY(2px); /* Adjust alignment */
-  width: 20px; /* Set checkbox width */
-  height: 20px; /* Set checkbox height */
-  appearance: none; /* Remove default appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: white; /* Checkbox background color */
-  border-radius: 5px; /* Rounded corners */
-  border: none; /* Remove border */
-  outline: none; /* Remove outline */
-  cursor: pointer; /* Pointer cursor */
-  
-}
-
-.form-row input[type="checkbox"]:checked,
-.form-row input[type="radio"]:checked {
-  background-color: rgb(216, 141, 141); /* Darker background when checked */
+  margin-right: 10px;
 }
 
 .form-row.button-row {
@@ -174,16 +149,11 @@ header {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 0 auto; /* Center the button horizontally */
-  display: block; /* Ensure button is block-level for margin auto to work */
-  
 }
 
 .form-row button:hover {
   background-color: rgba(228, 135, 135, 0.86);
 }
-
-
 
 footer {
     width: 100%;

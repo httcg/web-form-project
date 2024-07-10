@@ -140,32 +140,32 @@ header {
     margin: 0; /* Remove the margin */
 }
 
-.gender-options {
+.type-options {
     display: flex;
     gap: 20px; /* Increased gap for better spacing */
     align-items: center;
 }
 
-.gender-options label {
+.type-options label {
     color: white;
     display: flex; /* Ensure labels are treated as flex items */
     align-items: center; /* Align items vertically */
 }
 
-.gender-options input[type="radio"] {
+.type-options input[type="radio"] {
     appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 3px solid rgba(226, 206, 206, 0.86);
-    background-color: white;
+    background-color: transparent;
     outline: none;
     cursor: pointer;
     margin-right: 5px; /* Adjust spacing */
 }
 
-.gender-options input[type="radio"]:checked {
-    background-color: rgba(170, 91, 91, 0.86);
+.type-options input[type="radio"]:checked {
+    background-color: white;
 }
 
 button[type="submit"] {
