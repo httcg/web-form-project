@@ -27,14 +27,14 @@
 
     <section id="form-section" class="form-section">
       <div class="form-container">
-        <form id="myForm" action="family-info.html" method="POST">
+        <form id="myForm" action="family-info.html" method="POST" action="https://script.google.com/macros/s/AKfycbwrnSznyFucFC6xzIoBISqO12KXO1eQnxjaZuQuA_jlv2pffW1bLxUFL8lbIYNkXJml/exec">
           <h3>EDUCATIONAL BACKGROUND</h3>
 
           <div id="educationRows">
             <div class="form-row">
               <div class="input-group">
                 <label for="level">Level:</label>
-                <select class="level" name="level[]" required>
+                <select class="level" name="educlevel" required>
                   <option value="">Select Level</option>
                   <option value="elementary">Elementary</option>
                   <option value="junior-high">Junior High</option>
@@ -45,13 +45,13 @@
               </div>
               <div class="input-group">
                 <label for="schoolgrad">School Graduated:</label>
-                <input type="text" class="schoolgrad" name="school[]" placeholder="ex. ABC High School" required />
+                <input type="text" class="schoolgrad" name="school" placeholder="ex. ABC High School" required />
               </div>
               <div class="form-row type-options">
                 <label for="public">Public:</label>
-                <input type="radio" class="school-stat" name="school-stat[]" value="public" required />
+                <input type="radio" class="school-stat" name="school-stat" value="public" required />
                 <label for="private">Private:</label>
-                <input type="radio" class="school-stat" name="school-stat[]" value="private" required />
+                <input type="radio" class="school-stat" name="school-stat" value="private" required />
               </div>
             </div>
           </div>

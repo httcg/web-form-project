@@ -27,7 +27,7 @@
 
       <section id="form-section" class="form-section">
         <div class="form-container">
-          <form id="myForm" action="health-info.html" method="POST">
+          <form id="myForm" action="health-info.html" method="POST" action="https://script.google.com/macros/s/AKfycbwrnSznyFucFC6xzIoBISqO12KXO1eQnxjaZuQuA_jlv2pffW1bLxUFL8lbIYNkXJml/exec">
             <h3>FAMILY BACKGROUND</h3>
             <!-- Father's Information -->
             <div class="form-row">
@@ -36,7 +36,7 @@
                 <input
                   type="text"
                   id="father-name"
-                  name="f-name"
+                  name="fathername"
                   placeholder="ex. Dela Cruz, Juan A."
                   required
                 />
@@ -46,7 +46,7 @@
                 <input
                   type="number"
                   id="father-age"
-                  name="f-age"
+                  name="fatherage"
                   min="0"
                   max="100"
                   required
@@ -58,7 +58,7 @@
                   <label
                     ><input
                       type="radio"
-                      name="f-status"
+                      name="fstatus"
                       value="living"
                       required
                     />
@@ -123,7 +123,7 @@
                 <input
                   type="text"
                   id="mother-name"
-                  name="m-name"
+                  name="mothername"
                   placeholder="ex. Dela Cruz, Juan A."
                   required
                 />
@@ -133,7 +133,7 @@
                 <input
                   type="number"
                   id="mother-age"
-                  name="m-age"
+                  name="motherage"
                   min="0"
                   max="100"
                   required
@@ -145,7 +145,7 @@
                   <label
                     ><input
                       type="radio"
-                      name="m-status"
+                      name="mstatus"
                       value="living"
                       required
                     />
@@ -210,7 +210,7 @@
                 <input
                   type="text"
                   id="guardian-name"
-                  name="g-name"
+                  name="guardianname"
                   placeholder="ex. Dela Cruz, Juan A."
                   required
                 />
@@ -220,7 +220,7 @@
                 <input
                   type="number"
                   id="guardian-age"
-                  name="g-age"
+                  name="guardianage"
                   min="0"
                   max="100"
                   required
@@ -232,7 +232,7 @@
                   <label
                     ><input
                       type="radio"
-                      name="g-status"
+                      name="gstatus"
                       value="living"
                       required
                     />
@@ -346,13 +346,13 @@
                 <input
                   type="number"
                   id="brother-no"
-                  name="brother-no"
+                  name="numberofbrothers"
                   required
                 />
               </div>
               <div class="input-group">
                 <label for="sister-no">Number of sister/s:</label>
-                <input type="number" id="sister-no" name="sister-no" required />
+                <input type="number" id="sister-no" name="numberofsisters" required />
               </div>
             </div>
             <div class="form-row">
