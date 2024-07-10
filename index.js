@@ -26,3 +26,8 @@ function redirectToTestResultsPage() {
     document.getElementById("myForm").submit(); 
     window.location.href = "test-results.html"; 
 }
+
+function redirectToHome(){
+    document.getElementById("myForm").submit();
+    window.location.href = "index.html"
+}
