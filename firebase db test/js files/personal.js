@@ -9,16 +9,41 @@ const database = getDatabase(app);
 const personalinfoInDB = ref(database, "personalinfo");
 
 const inputFieldEl = document.getElementById("name")
+const inputFieldEl2 = document.getElementById("age")
+const inputFieldEl3 = document.getElementById("gender")
+
 const submitButton1 = document.getElementById("submitform")
 
     submitButton1.addEventListener("click", function(event) {
-        let inputValue = inputFieldEl.value
+        
+        let inputValue1 = inputFieldEl.value
+        let inputValue2 = inputFieldEl2.value
+        let inputValue3 = inputFieldEl3.value
+
+        
 
         const names = ref(database, "personalinfo/name");
+        const age = ref(database, "personalinfo/age");
+        const gender = ref(database, "personalinfo/gender");
 
-       push(names, inputValue)
+       push(names, inputValue1)
+       push(age, inputValue2)
+       push(gender, inputValue3)
+
+       document.getElementById("myForm").submit(); 
+       window.location.href = "edu.html"; 
+       
+
     });
 
+
+
+
+
+
+
+
+   
 
 
 

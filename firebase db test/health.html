@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PUP Office of Counseling and Psychological Services</title>
 
-  <link rel="stylesheet" href="health-info.css" />
-  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styleshits/health.css" />
+  <script src="js files/health.js" type="module"></script>
   <style>
     /* Additional CSS for alignment */
     .form-row {
@@ -40,8 +40,7 @@
     <section id="form-section" class="form-section">
       <div class="form-container">
         <div class="form-row1">
-          <form id="myForm" action="interest-hobby-info.html" method="POST" action="https://script.google.com/macros/s/AKfycbwrnSznyFucFC6xzIoBISqO12KXO1eQnxjaZuQuA_jlv2pffW1bLxUFL8lbIYNkXJml/exec">
-            <h3>HEALTH INFORMATION</h3>
+          <form id="myForm" action="interest.html" >
             <p>HEALTH</p>
             <p>A. PHYSICAL</p>
 
@@ -51,24 +50,24 @@
             <div class="form-row">
               <input
                 type="checkbox"
-                id="vision-problem"
-                name="vision-problem"
+                id="visionproblem"
+                name="visionproblem"
                 value="vision-problem"
               />
               <label for="vision-problem">Your vision</label>
               <label for="reason">if you do, please specify: </label>
-              <input type="text" id="reason-vision" name="reason-vision" />
+              <input type="text" id="reasonvision" name="reasonvision" />
             </div>
             <div class="form-row">
               <input
                 type="checkbox"
-                id="hearing-problem"
+                id="hearingproblem"
                 name="hearing-problem"
                 value="hearing-problem"
               />
               <label for="hearing-problem">Your hearing</label>
               <label for="reason">if you do, please specify: </label>
-              <input type="text" id="reason-hearing" name="reason-hearing" />
+              <input type="text" id="reasonhearing" name="reasonhearing" />
             </div>
             <div class="form-row">
               <input
@@ -194,7 +193,7 @@
             </div>
 
             <div class="form-row">
-              <button type="submit" onclick="redirectToInterestPage()">Submit and Continue</button>
+              <button id="submitform4">Submit and Continue</button>
             </div>
           </form>
         </div>

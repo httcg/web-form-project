@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PUP Office of Counseling and Psychological Services</title>
-    <link rel="stylesheet" href="educational-bg.css" />
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styleshits/edu.css" />
+    <script src="js files/edu.js" type="module"></script>
   </head>
 
   <body>
@@ -27,14 +27,14 @@
 
     <section id="form-section" class="form-section">
       <div class="form-container">
-        <form id="myForm" action="family-info.html" method="POST" action="https://script.google.com/macros/s/AKfycbzOMgG_hado21-RXHNg_BZitcRiOr11Pu-gXVApbpqo/dev">
+        <form id="myForm" action="family.html">
           <h3>EDUCATIONAL BACKGROUND</h3>
 
           <div id="educationRows">
             <div class="form-row">
               <div class="input-group">
                 <label for="level">Level:</label>
-                <select class="level" name="educlevel" required>
+                <select id="educlevel" class="level" name="educlevel" required>
                   <option value="">Select Level</option>
                   <option value="elementary">Elementary</option>
                   <option value="junior-high">Junior High</option>
@@ -45,13 +45,13 @@
               </div>
               <div class="input-group">
                 <label for="schoolgrad">School Graduated:</label>
-                <input type="text" class="schoolgrad" name="school" placeholder="ex. ABC High School" required />
+                <input type="text" id="school" class="schoolgrad" name="school" placeholder="ex. ABC High School" required />
               </div>
               <div class="form-row type-options">
                 <label for="public">Public:</label>
-                <input type="radio" class="school-stat" name="school-stat" value="public" required />
+                <input type="radio" id="schoolstat" class="school-stat" name="schoolstat" value="public" required />
                 <label for="private">Private:</label>
-                <input type="radio" class="school-stat" name="school-stat" value="private" required />
+                <input type="radio" id="schoolstat" class="school-stat" name="schoolstat" value="private" required />
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
           </div>
 
           <div class="form-row">
-            <button type="submit" onclick="redirectToFamilyPage()">Submit and Continue</button>
+            <button id="submitform2">Submit and Continue</button>
           </div>
         </form>
       </div>
@@ -75,5 +75,4 @@
   
 </body>
 </html>
-
 
