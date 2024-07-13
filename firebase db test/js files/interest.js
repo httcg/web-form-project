@@ -8,9 +8,9 @@ const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const personalinfoInDB = ref(database, "personalinfo");
 
-const inputFieldEl = document.getElementById("fathername")
-const inputFieldEl2 = document.getElementById("fatherage")
-const inputFieldEl3 = document.getElementById("fstatus")
+const inputFieldEl = document.getElementById("mathclub")
+const inputFieldEl2 = document.getElementById("englishclub")
+const inputFieldEl3 = document.getElementById("debateclub")
 
 const submitButton5 = document.getElementById("submitform5")
 
@@ -20,15 +20,15 @@ submitButton5.addEventListener("click", function(event) {
     let inputValue2 = inputFieldEl2.value
     let inputValue3 = inputFieldEl3.value
 
-    const fathername = ref(database, "family info/fatherinfo");
-    const fatherage = ref(database, "family info/fatherinfo");
-    const fstatus = ref(database, "family info/fatherinfo");
+    const mathclub = ref(database, "interest info");
+    const englishclub = ref(database,  "interest info");
+    const debateclub = ref(database,  "interest info");
 
-   push(fathername, inputValue1)
-   push(fatherage, inputValue2)
-   push(fstatus, inputValue3)
+   push(mathclub, inputValue1)
+   push(englishclub, inputValue2)
+   push(debateclub, inputValue3)
    
    document.getElementById("myForm").submit(); 
-   window.location.href = "health.html"; 
+   window.location.href = "testresult.html"; 
 
 });
