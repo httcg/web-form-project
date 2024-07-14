@@ -20,9 +20,9 @@ submitButton2.addEventListener("click", function(event) {
     let educinputValue2 = educinputFieldEl2.value
     let educinputValue3 = educinputFieldEl3.value
 
-    const educlevel = ref(database, "educationalinfo");
-    const school = ref(database, "educationalinfo");
-    const schoolstat = ref(database, "educationalinfo");
+    const educlevel = ref(database, "educational info/ educlevel");
+    const school = ref(database, "educational info/ school");
+    const schoolstat = ref(database, "educational info/ schoolstas");
 
    push(educlevel, educinputValue1)
    push(school, educinputValue2)
@@ -34,8 +34,8 @@ submitButton2.addEventListener("click", function(event) {
 });
 
 
-function addEducationRow() {
-    const educationRows = document.getElementById("educationRows");
+button.addEventListener("click", function(event) {    
+  const educationRows = document.getElementById("educationRows");
     const newRow = educationRows.firstElementChild.cloneNode(true);
   
     newRow.querySelectorAll("input[type='text'], input[type='radio']").forEach(input => input.value = "");
@@ -51,5 +51,7 @@ function addEducationRow() {
     });
   
     educationRows.appendChild(newRow);
-  }
+  });
+
+
   

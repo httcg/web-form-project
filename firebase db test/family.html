@@ -66,7 +66,11 @@
                     Yes</label
                   >
                   <label
-                    ><input type="radio" name="fstatus" value="deceased" />
+                    ><input 
+                    type="radio" 
+                    id="fstatus"
+                    name="fstatus" 
+                    value="deceased" />
                     No</label
                   >
                 </div>
@@ -79,8 +83,8 @@
                 >
                 <input
                   type="text"
-                  id="father-educ-attainment"
-                  name="father-educ-attainment"
+                  id="fathereducattainment"
+                  name="fathereducattainment"
                   required
                 />
               </div>
@@ -88,8 +92,8 @@
                 <label for="father-occupation">Occupation:</label>
                 <input
                   type="text"
-                  id="father-occupation"
-                  name="father-occupation"
+                  id="fatheroccupation"
+                  name="fatheroccupation"
                   required
                 />
               </div>
@@ -99,8 +103,8 @@
                 <label for="father-employer-name">Name of Employer:</label>
                 <input
                   type="text"
-                  id="father-employer-name"
-                  name="father-employer-name"
+                  id="fatheremployername"
+                  name="fatheremployername"
                   required
                 />
               </div>
@@ -110,8 +114,8 @@
                 >
                 <input
                   type="text"
-                  id="father-employer-address"
-                  name="father-employer-address"
+                  id="fatheremployeraddress"
+                  name="fatheremployeraddress"
                   required
                 />
               </div>
@@ -146,6 +150,7 @@
                   <label
                     ><input
                       type="radio"
+                      id="mstatus"
                       name="mstatus"
                       value="living"
                       required
@@ -155,6 +160,7 @@
                   <label
                     ><input 
                     type="radio" 
+                    id="mstatus"
                     name="mstatus" 
                     value="deceased" />
                     No</label
@@ -169,8 +175,8 @@
                 >
                 <input
                   type="text"
-                  id="mother-educ-attainment"
-                  name="mother-educ-attainment"
+                  id="mothereducattainment"
+                  name="mothereducattainment"
                   required
                 />
               </div>
@@ -178,8 +184,8 @@
                 <label for="mother-occupation">Occupation:</label>
                 <input
                   type="text"
-                  id="mother-occupation"
-                  name="mother-occupation"
+                  id="motheroccupation"
+                  name="motheroccupation"
                   required
                 />
               </div>
@@ -189,8 +195,8 @@
                 <label for="mother-employer-name">Name of Employer:</label>
                 <input
                   type="text"
-                  id="mother-employer-name"
-                  name="mother-employer-name"
+                  id="motheremployername"
+                  name="motheremployername"
                   required
                 />
               </div>
@@ -200,8 +206,8 @@
                 >
                 <input
                   type="text"
-                  id="mother-employer-address"
-                  name="mother-employer-address"
+                  id="motheremployeraddress"
+                  name="motheremployeraddress"
                   required
                 />
               </div>
@@ -236,6 +242,7 @@
                   <label
                     ><input
                       type="radio"
+                      id="gstatus"
                       name="gstatus"
                       value="living"
                       required
@@ -244,7 +251,8 @@
                   >
                   <label
                     ><input 
-                    type="radio" 
+                    type="radio"
+                    id="gstatus"
                     name="gstatus" 
                     value="deceased" />
                     No</label
@@ -259,8 +267,8 @@
                 >
                 <input
                   type="text"
-                  id="guardian-educ-attainment"
-                  name="guardian-educ-attainment"
+                  id="guardianeducattainment"
+                  name="guardianeducattainment"
                   required
                 />
               </div>
@@ -268,8 +276,8 @@
                 <label for="guardian-occupation">Occupation:</label>
                 <input
                   type="text"
-                  id="guardian-occupation"
-                  name="guardian-occupation"
+                  id="guardianoccupation"
+                  name="guardianoccupation"
                   required
                 />
               </div>
@@ -279,8 +287,8 @@
                 <label for="guardian-employer-name">Name of Employer:</label>
                 <input
                   type="text"
-                  id="guardian-employer-name"
-                  name="guardian-employer-name"
+                  id="guardianemployername"
+                  name="guardianemployername"
                   required
                 />
               </div>
@@ -290,8 +298,8 @@
                 >
                 <input
                   type="text"
-                  id="guardian-employer-address"
-                  name="guardian-employer-address"
+                  id="guardianemployeraddress"
+                  name="guardianemployeraddress"
                   required
                 />
               </div>
@@ -305,8 +313,8 @@
                   >Number of children in the family including yourself:</label>
                 <input
                   type="number"
-                  id="children-no"
-                  name="children-no"
+                  id="childrenno"
+                  name="childrenno"
                   required
                 />
               </div>
@@ -321,15 +329,16 @@
                   <label
                     ><input
                       type="radio"
+                      id="famsupport"
                       name="family-support"
                       value="family"
-                      required
                     />
                     Family</label
                   >
                   <label
                     ><input
                       type="radio"
+                      id="famsupport"
                       name="family-support"
                       value="studies"
                     />
@@ -338,6 +347,7 @@
                   <label
                     ><input
                       type="radio"
+                      id="famsupport"
                       name="family-support"
                       value="own-family"
                     />
@@ -358,7 +368,10 @@
               </div>
               <div class="input-group">
                 <label for="sister-no">Number of sister/s:</label>
-                <input type="number" id="numberofsisters" name="numberofsisters" required />
+                <input 
+                  type="number" 
+                  id="numberofsisters" 
+                  name="numberofsisters" required />
               </div>
             </div>
             <div class="form-row">
@@ -366,8 +379,8 @@
                 <label for="who-finances-u">Who finances your schooling?</label>
                 <input
                   type="text"
-                  id="who-finances-u"
-                  name="who-finances-u"
+                  id="whofinancesu"
+                  name="whofinancesu"
                   required
                 />
               </div>
