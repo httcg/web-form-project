@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("PUP.jpg") no-repeat center center fixed;
+    background: url("/firebase db test/PUP.jpg") no-repeat center center fixed;
     background-size: cover;
     position: relative;
     display: flex;
@@ -106,11 +106,29 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
 
-
 .form-row {
     display: flex;
-    flex-wrap: wrap; /* Allow rows to wrap */
+    justify-content: space-between; /* Align buttons at the ends */
+    align-items: flex-end; /* Align buttons at the bottom */
     gap: 20px; /* Space between input groups */
+}
+
+.form-row button {
+    background-color: rgba(211, 114, 114, 0.86);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.form-row button:hover {
+    background-color: rgba(228, 135, 135, 0.86);
+}
+
+#clearForm {
+    order: -1; /* Move the Clear button to the left */
 }
 
 .form-row .input-group {
@@ -125,8 +143,6 @@ header {
     color: white;
 }
 
-
-
 .form-row input,
 .form-row select {
     padding: 0.5rem;
@@ -137,15 +153,11 @@ header {
     margin-bottom: 10px;
 }
 
-
-
 .form-row input[type="number"]::-webkit-outer-spin-button,
 .form-row input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none; /* WebKit browsers like Safari and Chrome */
     margin: 0; /* Remove the margin */
 }
-
-
 
 .gender-options {
     display: flex;
@@ -173,23 +185,6 @@ header {
 
 .gender-options input[type="radio"]:checked {
     background-color: white;
-}
-
-
-button[type="submit"] {
-    background-color: rgba(211, 114, 114, 0.86);
-    color: white;
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-button[type="submit"]:hover {
-    background-color: rgba(228, 135, 135, 0.86);
 }
 
 footer {

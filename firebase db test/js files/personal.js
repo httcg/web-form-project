@@ -1,3 +1,82 @@
+function saveFormData() {
+  const formData = {
+      name: document.getElementById('name').value,
+      age: document.getElementById('age').value,
+      gender: document.querySelector('input[name="gender"]:checked').value,
+      civilstats: document.getElementById('civilstats').value,
+      program: document.getElementById('program').value,
+      year: document.getElementById('year').value,
+      section: document.getElementById('section').value,
+      birthday: document.getElementById('birthday').value,
+      birthplace: document.getElementById('birthplace').value,
+      email: document.getElementById('email').value,
+      cityadd: document.getElementById('cityadd').value,
+      provincialadd: document.getElementById('provincialadd').value,
+      height: document.getElementById('height').value,
+      weight: document.getElementById('weight').value,
+      complexion: document.getElementById('complexion').value,
+      telephone: document.getElementById('telephone').value,
+      HSgwa: document.getElementById('HSgwa').value,
+      religion: document.getElementById('religion').value,
+      emp_name: document.getElementById('emp-name').value,
+      emp_add: document.getElementById('emp-add').value,
+      contact_name: document.getElementById('contact-name').value,
+      contact_add: document.getElementById('contact-add').value,
+      relationship: document.getElementById('relationship').value,
+      contact_no: document.getElementById('contact-no').value
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+// Function to load form data from local storage
+function loadFormData() {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+      document.getElementById('name').value = formData.name;
+      document.getElementById('age').value = formData.age;
+      document.querySelector('input[name="gender"][value="' + formData.gender + '"]').checked = true;
+      document.getElementById('civilstats').value = formData.civilstats;
+      document.getElementById('program').value = formData.program;
+      document.getElementById('year').value = formData.year;
+      document.getElementById('section').value = formData.section;
+      document.getElementById('birthday').value = formData.birthday;
+      document.getElementById('birthplace').value = formData.birthplace;
+      document.getElementById('email').value = formData.email;
+      document.getElementById('cityadd').value = formData.cityadd;
+      document.getElementById('provincialadd').value = formData.provincialadd;
+      document.getElementById('height').value = formData.height;
+      document.getElementById('weight').value = formData.weight;
+      document.getElementById('complexion').value = formData.complexion;
+      document.getElementById('telephone').value = formData.telephone;
+      document.getElementById('HSgwa').value = formData.HSgwa;
+      document.getElementById('religion').value = formData.religion;
+      document.getElementById('emp-name').value = formData.emp_name;
+      document.getElementById('emp-add').value = formData.emp_add;
+      document.getElementById('contact-name').value = formData.contact_name;
+      document.getElementById('contact-add').value = formData.contact_add;
+      document.getElementById('relationship').value = formData.relationship;
+      document.getElementById('contact-no').value = formData.contact_no;
+  }
+}
+
+// Call loadFormData when the page loads
+window.onload = function() {
+  loadFormData();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
  

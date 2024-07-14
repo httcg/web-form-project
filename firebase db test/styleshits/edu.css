@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("PUP.jpg") no-repeat center center fixed;
+  background: url("/firebase db test/PUP.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
   display: flex;
@@ -96,14 +96,14 @@ header {
 }
 
 .form-container {
-  background-color: rgba(170, 91, 91, 0.86);
-  color: white;
-  border-radius: 10px;
-  padding: 2rem;
-  width: 90%;
-  max-width: 800px;
-  margin: 20px auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(170, 91, 91, 0.86);
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%; /* Adjust the width as per your preference */
+    max-width: 800px; /* Set a max-width to prevent it from getting too wide on larger screens */
+    margin: 20px auto; /* Center the form container and provide some margin */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
 
 .form-container h2,
@@ -113,8 +113,10 @@ header {
 
 .form-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between; /* Align buttons at the ends */
+  align-items: flex-end; /* Align buttons at the bottom */
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
 }
 
 .form-row .input-group {
@@ -172,6 +174,18 @@ header {
 .type-options input[type="radio"]:checked {
   background-color: white;
 }
+.form-row button {
+  background-color: rgba(211, 114, 114, 0.86);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+.form-row button:hover {
+  background-color: rgba(228, 135, 135, 0.86);
+}
 
 .button-container {
   display: flex;
@@ -191,7 +205,8 @@ header {
   background-color: rgba(211, 114, 114, 0.86);
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="previous"] {
   background-color: rgba(211, 114, 114, 0.86);
   color: white;
   padding: 0.7rem 1.5rem;
@@ -199,12 +214,18 @@ button[type="submit"] {
   border-radius: 5px;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
-  margin-top: 20px;
 }
 
-button[type="submit"]:hover {
+button[id="submit"]:hover {
   background-color: rgba(228, 135, 135, 0.86);
+}
+
+.previous-button {
+  align-self: flex-start; /* Align to the left */
+}
+
+.continue-button {
+  align-self: flex-end; /* Align to the right */
 }
 
 .add-button {
@@ -216,12 +237,26 @@ button[type="submit"]:hover {
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 0px;
   width: 190px;
 }
 
 .add-button:hover {
+  background-color: rgba(228, 135, 135, 0.86);
+}
+
+.delete-button {
+  background-color: rgba(211, 114, 114, 0.86);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.delete-button:hover {
   background-color: rgba(228, 135, 135, 0.86);
 }
 

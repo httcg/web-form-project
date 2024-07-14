@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("PUP.jpg") no-repeat center center fixed;
+  background: url("/firebase db test/PUP.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
