@@ -14,7 +14,7 @@ submitButton2.addEventListener("click", function(event) {
 
     const educationRows = document.getElementById("educationRows").children;
 
-    // Loop through each educational row
+    // oop through each educational row
     for (let i = 0; i < educationRows.length; i++) {
         const educlevelField = educationRows[i].querySelector(`[name^="educlevel-"]`);
         const schoolField = educationRows[i].querySelector(`[name^="school-"]`);
@@ -25,7 +25,7 @@ submitButton2.addEventListener("click", function(event) {
             const educinputValue2 = schoolField.value;
             const educinputValue3 = schoolStatField.value;
 
-            // Create a composite unique ID based on educlevel, school, and schoolstat
+            // unique ID based on educlevel, school, and schoolstat
             const uniqueId = `${educinputValue1}_${educinputValue2}_${educinputValue3}`;
 
             const educationalInfoRef = ref(database, `educational info/${uniqueId}`);

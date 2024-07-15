@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("/firebase db test/PUP.jpg") no-repeat center center fixed;
+  background: url("PUP.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
@@ -74,37 +74,42 @@ header {
   padding: 15px;
   color: white;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navmenu li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .navmenu li:hover {
   text-decoration: underline;
 }
 
-.contact {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+  padding-bottom: 100px; /* Space for the footer */
 }
 
-.contact-text {
+.home-text {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+}
+
+.home-text h2 {
+  font-size: 3rem;
+  margin-top: 150px;
+  margin-bottom: 5px;
   color: white;
-  max-width: 600px;
-  padding: 20px;
   animation: fadeInUp 2s ease-out;
 }
 
-.contact-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  animation: fadeInUp 2s ease-out;
-}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -116,36 +121,73 @@ header {
   }
 }
 
-.contact-text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-.contact-text a {
+.About,
+.Vision,
+.Mission,
+.Hymn {
+  margin-top: 30px;
+  padding: 30px;
   color: white;
-  text-decoration: underline;
+  background-color: rgba(170, 91, 91, 0.86);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-out forwards;
 }
 
-.contact-text a[href="mailto:inquire@pup.edu.ph"] {
-  color: white;
+.About span,
+.Vision span,
+.Mission span,
+.Hymn span {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.contact-text a:hover {
-  color: #f7f7f2;
+.About p,
+.Vision p,
+.Mission p,
+.Hymn p {
+  text-align: justify;
 }
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
 footer {
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
-    margin: 0;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 500;
+  margin: 0;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

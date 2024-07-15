@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url("/firebase db test/PUP.jpg") no-repeat center center fixed;
+    background: url("PUP.jpg") no-repeat center center fixed;
     background-size: cover;
     position: relative;
     display: flex;
@@ -87,6 +87,7 @@ header {
 .navmenu li:hover {
     text-decoration: underline;
 }
+
 .form-section {
     display: flex;
     justify-content: center;
@@ -117,8 +118,27 @@ header {
 
 .form-row {
     display: flex;
-    flex-wrap: wrap; /* Allow rows to wrap */
+    justify-content: space-between; /* Align buttons at the ends */
+    align-items: flex-end; /* Align buttons at the bottom */
     gap: 20px; /* Space between input groups */
+}
+
+.form-row button {
+    background-color: rgba(211, 114, 114, 0.86);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.form-row button:hover {
+    background-color: rgba(228, 135, 135, 0.86);
+}
+
+#clearForm {
+    order: -1; /* Move the Clear button to the left */
 }
 
 .form-row .input-group {
@@ -149,19 +169,19 @@ header {
     margin: 0; /* Remove the margin */
 }
 
-.type-options {
+.gender-options {
     display: flex;
     gap: 20px; /* Increased gap for better spacing */
     align-items: center;
 }
 
-.type-options label {
+.gender-options label {
     color: white;
     display: flex; /* Ensure labels are treated as flex items */
     align-items: center; /* Align items vertically */
 }
 
-.type-options input[type="radio"] {
+.gender-options input[type="radio"] {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -173,29 +193,8 @@ header {
     margin-right: 5px; /* Adjust spacing */
 }
 
-.type-options input[type="radio"]:checked {
+.gender-options input[type="radio"]:checked {
     background-color: white;
-}
-
-.button-group {
-    display: flex;
-    justify-content: space-between; /* Align buttons at the ends */
-    align-items: flex-end; /* Align buttons at the bottom */
-    gap: 20px; /* Space between buttons */
-    margin-top: 20px;
-}
-
-.button-group button {
-    background-color: rgba(211, 114, 114, 0.86);
-    color: white;
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button-group button:hover {
-    background-color: rgba(228, 135, 135, 0.86);
 }
 
 footer {
