@@ -87,12 +87,21 @@ header {
 .navmenu li:hover {
     text-decoration: underline;
 }
-
 .form-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    animation: fadeIn 0.5s;
+    animation: slideDown 0.5s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .form-container {
@@ -168,19 +177,24 @@ header {
     background-color: white;
 }
 
-button[type="submit"] {
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Align buttons at the ends */
+    align-items: flex-end; /* Align buttons at the bottom */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.button-group button {
     background-color: rgba(211, 114, 114, 0.86);
     color: white;
     padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
 }
 
-button[type="submit"]:hover {
+.button-group button:hover {
     background-color: rgba(228, 135, 135, 0.86);
 }
 

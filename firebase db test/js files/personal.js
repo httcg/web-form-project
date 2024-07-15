@@ -59,10 +59,21 @@ function loadFormData() {
   }
 }
 
-// Call loadFormData when the page loads
 window.onload = function() {
   loadFormData();
 };
+
+function showConfirmationDialog(event) {
+  event.preventDefault();
+  const confirmation = confirm("Do you really want to leave this page? Your progress will not be saved.");
+  if (confirmation) {
+    window.location.href = event.target.href;
+  }
+}
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(function(link) {
+  link.addEventListener('click', showConfirmationDialog);
+});
 
 
 
@@ -163,12 +174,12 @@ const submitButton1 = document.getElementById("submitform")
         const telephone = ref(database, "personal info/telephone");
         const HSgwa = ref(database, "personal info/HSgwa");
         const religion = ref(database, "personal info/religion");
-        const empname = ref(database, "personal info/empname");
-        const empadd = ref(database, "personal info/empadd");
-        const contactname = ref(database, "personal info/contactname");
-        const relationship = ref(database, "personal info/relationship");
-        const contactadd = ref(database, "personal info/contactadd");
-        const contactno = ref(database, "personal info/contactno");
+        const empname = ref(database, "personal info/employed/empname");
+        const empadd = ref(database, "personal info/employed/empadd");
+        const contactname = ref(database, "personal info/employed/contactname");
+        const relationship = ref(database, "personal info/guardian/relationship");
+        const contactadd = ref(database, "personal info/guardian/contactadd");
+        const contactno = ref(database, "personal info/guardian/contactno");
 
 
        push(names, inputValue1)
@@ -201,6 +212,180 @@ const submitButton1 = document.getElementById("submitform")
        
 
     });
+
+
+    function validateForm() {
+      // Regular expressions for email and phone number validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\d{10}$/;
+
+      // Getting form elements
+      const name = document.getElementById('name');
+      const age = document.getElementById('age');
+      const gender = document.querySelector('input[name="gender"]:checked');
+      const civilstats = document.getElementById('civilstats');
+      const program = document.getElementById('program');
+      const year = document.getElementById('year');
+      const section = document.getElementById('section');
+      const birthday = document.getElementById('birthday');
+      const birthplace = document.getElementById('birthplace');
+      const email = document.getElementById('email');
+      const cityadd = document.getElementById('cityadd');
+      const provincialadd = document.getElementById('provincialadd');
+      const height = document.getElementById('height');
+      const weight = document.getElementById('weight');
+      const complexion = document.getElementById('complexion');
+      const telephone = document.getElementById('telephone');
+      const HSgwa = document.getElementById('HSgwa');
+      const religion = document.getElementById('religion');
+      const empname = document.getElementById('empname');
+      const empadd = document.getElementById('empadd');
+      const contactname = document.getElementById('contactname');
+      const contactadd = document.getElementById('contactadd');
+      const relationship = document.getElementById('relationship');
+      const contactno = document.getElementById('contactno');
+
+      // Validation logic for each field
+      if (name.value.trim() === '') {
+          alert('Please enter your Fullname.');
+          name.focus();
+          return false;
+      }
+
+      if (isNaN(age.value) || age.value === '' || age.value <= 0 || age.value > 100) {
+          alert('Please enter a valid Age.');
+          age.focus();
+          return false;
+      }
+
+      if (!gender) {
+          alert('Please select your Gender.');
+          return false;
+      }
+
+      if (civilstats.value.trim() === '') {
+          alert('Please enter your Civil Status.');
+          civilstats.focus();
+          return false;
+      }
+
+      if (program.value.trim() === '') {
+          alert('Please enter your Program.');
+          program.focus();
+          return false;
+      }
+
+      if (year.value.trim() === '' || isNaN(year.value) || year.value < 1 || year.value > 5) {
+          alert('Please enter a valid Year.');
+          year.focus();
+          return false;
+      }
+
+      if (section.value.trim() === '') {
+          alert('Please enter your Section.');
+          section.focus();
+          return false;
+      }
+
+      if (birthday.value.trim() === '') {
+          alert('Please enter your Birthdate.');
+          birthday.focus();
+          return false;
+      }
+
+      if (birthplace.value.trim() === '') {
+          alert('Please enter your Place of Birth.');
+          birthplace.focus();
+          return false;
+      }
+
+      if (!emailRegex.test(email.value)) {
+          alert('Please enter a valid Email address.');
+          email.focus();
+          return false;
+      }
+
+      if (cityadd.value.trim() === '') {
+          alert('Please enter your City Address.');
+          cityadd.focus();
+          return false;
+      }
+
+      if (provincialadd.value.trim() === '') {
+          alert('Please enter your Provincial Address.');
+          provincialadd.focus();
+          return false;
+      }
+
+      if (height.value.trim() === '') {
+          alert('Please enter your Height.');
+          height.focus();
+          return false;
+      }
+
+      if (weight.value.trim() === '') {
+          alert('Please enter your Weight.');
+          weight.focus();
+          return false;
+      }
+
+      if (telephone.value.trim() === '' || !phoneRegex.test(telephone.value)) {
+          alert('Please enter a valid Telephone number.');
+          telephone.focus();
+          return false;
+      }
+
+      if (HSgwa.value.trim() === '') {
+          alert('Please enter your Highschool general weighted average.');
+          HSgwa.focus();
+          return false;
+      }
+
+      if (religion.value.trim() === '') {
+          alert('Please enter your Religion.');
+          religion.focus();
+          return false;
+      }
+
+      if (empname.value.trim() === '') {
+          alert('Please enter the Fullname of your employer.');
+          empname.focus();
+          return false;
+      }
+
+      if (empadd.value.trim() === '') {
+          alert('Please enter the Address of your employer.');
+          empadd.focus();
+          return false;
+      }
+
+      if (contactname.value.trim() === '') {
+          alert('Please enter the Fullname of your emergency contact person.');
+          contactname.focus();
+          return false;
+      }
+
+      if (contactadd.value.trim() === '') {
+          alert('Please enter the Address of your emergency contact person.');
+          contactadd.focus();
+          return false;
+      }
+
+      if (relationship.value.trim() === '') {
+          alert('Please enter the Relationship with your emergency contact person.');
+          relationship.focus();
+          return false;
+      }
+
+      if (contactno.value.trim() === '' || !phoneRegex.test(contactno.value)) {
+          alert('Please enter a valid Contact number for your emergency contact person.');
+          contactno.focus();
+          return false;
+      }
+
+      // If all validations pass, the form will submit
+      return true;
+  }
 
 
 

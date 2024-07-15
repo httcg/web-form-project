@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PUP Office of Counseling and Psychological Services</title>
+    <title>PUP Guidance Office of Counseling and Psychological Services</title>
+    <link rel="icon" type="image/png" href="/firebase db test/PUPLogo.png">       
     <link rel="stylesheet" href="styleshits/family.css" />
     <script src="js files/family.js" type="module"></script>
   </head>
@@ -12,22 +13,22 @@
     <div class="content-wrapper">
       <header>
         <div class="logo-container">
-          <img src="/firebase db test/images/PUPLogo.png" alt="PUP Logo" class="logo" />
+          <img src="/firebase db test/PUPLogo.png" alt="PUP Logo" class="logo" />
           <div class="text-container">
             <h4 class="name">Polytechnic University of the Philippines</h4>
             <p class="tagline">The Country's 1st Polytechnic University</p>
           </div>
         </div>
         <ul class="navmenu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="guidance.html">Guidance</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="homepage.html" class="nav-link">Home</a></li>
+          <li><a href="guidance.html" class="nav-link">Guidance</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </header>
 
       <section id="form-section" class="form-section">
         <div class="form-container">
-          <form id="myForm" action="health.html" ></form>
+          <form id="myForm" ></form>
               <h3>FAMILY BACKGROUND</h3>
             <!-- Father's Information -->
             <div class="form-row">
@@ -387,6 +388,7 @@
             </div>
 
             <div class="button-group">
+              <button type="button" onclick="window.location.href='edu.html'">Previous</button>
               <button id="submitform3">Save and Continue</button>
             </div>
           </form>

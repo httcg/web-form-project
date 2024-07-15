@@ -93,28 +93,16 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  animation: fadeIn 0.5s;
+  animation: slideDown 0.5s;
 }
-
-
-.form-row button {
-  background-color: rgba(211, 114, 114, 0.86);
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-.form-row button:hover {
-  background-color: rgba(228, 135, 135, 0.86);
-}
-
-
-.form-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .form-container {
@@ -177,23 +165,34 @@ header {
 
 .form-row input[type="checkbox"]:checked {
   background-color: #d88d8d;
+}.form-row.button-row {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons to opposite ends */
+  margin-top: 20px; /* Adjust margin as needed */
 }
 
-button[type="submit"] {
+.previous-button {
+  align-self: flex-start; /* Align to the left */
+}
+
+.continue-button {
+  align-self: flex-end; /* Align to the right */
+}
+
+.form-row button {
+  padding: 0.75rem 1rem;
   background-color: rgba(211, 114, 114, 0.86);
   color: white;
-  padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+.form-row button:hover {
   background-color: rgba(228, 135, 135, 0.86);
 }
+
 
 footer {
   width: 100%;

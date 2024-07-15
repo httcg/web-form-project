@@ -7,51 +7,49 @@ const appSettings = {
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const personalinfoInDB = ref(database, "personalinfo");
-
-const educinputFieldEl = document.getElementById("educlevel")
-const educinputFieldEl2 = document.getElementById("school")
-const educinputFieldEl3 = document.getElementById("schoolstat")
-
-const submitButton2 = document.getElementById("submitform2")
+const submitButton2 = document.getElementById("submitform2");
 
 submitButton2.addEventListener("click", function(event) {
-    
-    let educinputValue1 = educinputFieldEl.value
-    let educinputValue2 = educinputFieldEl2.value
-    let educinputValue3 = educinputFieldEl3.value
+    event.preventDefault();
 
-    const educlevel = ref(database, "educational info/ educlevel");
-    const school = ref(database, "educational info/ school");
-    const schoolstat = ref(database, "educational info/ schoolstas");
+    const educationRows = document.getElementById("educationRows").children;
 
-   push(educlevel, educinputValue1)
-   push(school, educinputValue2)
-   push(schoolstat, educinputValue3)
-   
-   document.getElementById("myForm").submit(); 
-   window.location.href = "family.html"; 
+    // Loop through each educational row
+    for (let i = 0; i < educationRows.length; i++) {
+        const educlevelField = educationRows[i].querySelector(`[name^="educlevel-"]`);
+        const schoolField = educationRows[i].querySelector(`[name^="school-"]`);
+        const schoolStatField = educationRows[i].querySelector(`[name^="school-stat-"]:checked`);
 
+        if (educlevelField && schoolField && schoolStatField) {
+            const educinputValue1 = educlevelField.value;
+            const educinputValue2 = schoolField.value;
+            const educinputValue3 = schoolStatField.value;
+
+            // Create a composite unique ID based on educlevel, school, and schoolstat
+            const uniqueId = `${educinputValue1}_${educinputValue2}_${educinputValue3}`;
+
+            const educationalInfoRef = ref(database, `educational info/${uniqueId}`);
+            push(educationalInfoRef, {
+                educlevel: educinputValue1,
+                school: educinputValue2,
+                schoolstat: educinputValue3
+            });
+        }
+    }
+
+    document.getElementById("myForm").submit();
+    window.location.href = "family.html";
 });
-
-
-button.addEventListener("click", function(event) {    
-  const educationRows = document.getElementById("educationRows");
-    const newRow = educationRows.firstElementChild.cloneNode(true);
-  
-    newRow.querySelectorAll("input[type='text'], input[type='radio']").forEach(input => input.value = "");
-  
-    // add a delete button to the new row
-    const deleteButton = document.createElement("button");
-    deleteButton.classList.add("delete-button");
-    deleteButton.textContent = "Delete";
-    newRow.append(deleteButton);
-  
-    deleteButton.addEventListener("click", function() {
-      this.parentElement.remove();
-    });
-  
-    educationRows.appendChild(newRow);
+  function showConfirmationDialog(event) {
+    event.preventDefault();
+    const confirmation = confirm("Do you really want to leave this page? Your progress will not be saved.");
+    if (confirmation) {
+      window.location.href = event.target.href;
+    }
+  }
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', showConfirmationDialog);
   });
-
 
   

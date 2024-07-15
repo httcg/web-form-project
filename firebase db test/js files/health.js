@@ -23,8 +23,11 @@ const inputFieldEl12= document.getElementById("lastconsulted")
 const inputFieldEl13= document.getElementById("purposeconsulted")
 const inputFieldEl14= document.getElementById("otherpurposeconsult")
 
+const submitButton4 = document.getElementById("submitform4")
+
 submitButton4.addEventListener("click", function(event) {
-    
+    event.preventDefault();
+
     let inputValue1 = inputFieldEl.value
     let inputValue2 = inputFieldEl2.value
     let inputValue3 = inputFieldEl3.value
@@ -48,30 +51,42 @@ submitButton4.addEventListener("click", function(event) {
     const reasonspeech = ref(database, "health info/mouth");
     const genhealthproblem = ref(database, "health info/body");
     const reasongenhealth = ref(database, "health info/body");
-    const psychiatrist_consulted = ref(database, "health info/consultation");
-    const psychologist_consulted = ref(database, "health info/consultation");
-    const counselor_consulted = ref(database, "health info/consultation");
+    const psychiatrist_consulted = ref(database, "health info/consultation/with psychiatrist");
+    const psychologist_consulted = ref(database, "health info/consultation/with psychologist");
+    const counselor_consulted = ref(database, "health info/consultation/with counselor");
     const lastconsulted = ref(database, "health info/consultation");
     const purposeconsulted = ref(database, "health info/consultation");
     const otherpurposeconsult = ref(database, "health info/consultation");
-
-
-   push(visionproblem, inputValue1)
-   push(reasonvision, inputValue2)
-   push(hearingproblem, inputValue3)
-   push(reasonhearing, inputValue4)
-   push(speechproblem, inputValue5)
-   push(reasonspeech, inputValue6)
-   push(genhealthproblem, inputValue7)
-   push(reasongenhealth, inputValue8)
-   push(psychiatrist_consulted, inputValue9)
-   push(psychologist_consulted, inputValue10)
-   push(counselor_consulted, inputValue11)
-   push(lastconsulted, inputValue12)
-   push(purposeconsulted, inputValue13)
-   push(otherpurposeconsult, inputValue14)
-
-   document.getElementById("myForm").submit(); 
-   window.location.href = "interest.html"; 
+    
+    push(visionproblem, inputValue1)
+    push(reasonvision, inputValue2)
+    push(hearingproblem, inputValue3)
+    push(reasonhearing, inputValue4)
+    push(speechproblem, inputValue5)
+    push(reasonspeech, inputValue6)
+    push(genhealthproblem, inputValue7)
+    push(reasongenhealth, inputValue8)
+    push(psychiatrist_consulted, inputValue9)
+    push(psychologist_consulted, inputValue10)
+    push(counselor_consulted, inputValue11)
+    push(lastconsulted, inputValue12)
+    push(purposeconsulted, inputValue13)
+    push(otherpurposeconsult, inputValue14)
+    
+    document.getElementById("myForm").submit(); 
+    window.location.href = "interest.html"; 
 
 });
+
+
+function showConfirmationDialog(event) {
+    event.preventDefault();
+    const confirmation = confirm("Do you really want to leave this page? Your progress will not be saved.");
+    if (confirmation) {
+      window.location.href = event.target.href;
+    }
+  }
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', showConfirmationDialog);
+  });

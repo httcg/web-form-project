@@ -3,181 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PUP Office of Counseling and Psychological Services</title>
+    <title>PUP Guidance Office of Counseling and Psychological Services</title>
+    <link rel="icon" type="image/png" href="/firebase db test/PUPLogo.png">       
     <link rel="stylesheet" href="styleshits/interest.css" />
     <script src="js files/interest.js" type="module"></script>
-</head>
+  </head>
 
-<body>
-  <div class="content-wrapper">
-    <header>
+  <body>
+    <div class="content-wrapper">
+      <header>
         <div class="logo-container">
-            <img src="/firebase db test/PUPLogo.png" alt="PUP Logo" class="logo" />
-            <div class="text-container">
-                <h4 class="name">Polytechnic University of the Philippines</h4>
-                <p class="tagline">The Country's 1st Polytechnic University</p>
-            </div>
+          <img src="/firebase db test/PUPLogo.png" alt="PUP Logo" class="logo" />
+          <div class="text-container">
+            <h4 class="name">Polytechnic University of the Philippines</h4>
+            <p class="tagline">The Country's 1st Polytechnic University</p>
+          </div>
         </div>
         <ul class="navmenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="guidance.html">Guidance</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="homepage.html" class="nav-link">Home</a></li>
+            <li><a href="guidance.html" class="nav-link">Guidance</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+            
         </ul>
-    </header>
-    
-    <div>
-      <h2>
-        INDIVIDUAL INVENTORY RECORD FORM
-      </h2>
-    </div>
-    
-    <div class="form-container">
-      <div class="form-row">
-        <form id="myForm" action="testresult.html">
-          <h3>
-            INTERESTS & HOBBIES
-          </h3>
-          
-          <div class="form-row">
-            <p>A. ACADEMIC</p>
-            <p> <br><br><br><br>Are you in any organization? check all that applies:</p>   
-          </div>
-
-          <div class="form-row">
-            <input type="checkbox" id="mathclub" name="mathclub" value="math-club">
-            <label for="math-club">Math Club</label>
-            <input type="checkbox" id="englishclub" name="englishclub" value="english-club">
-            <label for="english-club">English Club</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="debateclub" name="debateclub" value="debate-club">
-            <label for="debate-club">Debate Club</label> 
-            <input type="checkbox" id="speechclub" name="speechclub" value="speech-club">
-            <label for="speech-club">Speech Club</label>  
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="scienceclub" name="scienceclub" value="science-club">
-            <label for="science-club">Science Club</label> 
-            <input type="checkbox" id="otherclub" name="otherclub" value="other-club">
-            <label for="other-club">other/s, please specify:</label>  
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="quizzerclub" name="quizzerclub" value="quizzer-club">
-            <label for="quizzer-club">Quizzer's Club</label> 
-
-            <input type="text" id="otherclub" name="otherclub" >
-          </div>
+      </header>
 
 
-          <div class="form-row">
-            <label for="fave-subject">What is/are your favorite subject/s?</label> 
-            <input type="text" id="favesubject" name="favesubject" >
-            <label for="least-fave-subject">What is /are the subject/s you like least?</label> 
-            <input type="text" id="leastfavesubject" name="leastfavesubject" >
-          </div>
+    <section class="form-section">
+        <div class="form-container">
+            
+            <form id="myForm">
+                <h3>INTERESTS & HOBBIES</h3>
+                    <p>A. ACADEMIC</p>
+                <div class="form-row">
+                    
+                    <p>Are you in any organization? Check all that applies:</p>
+                </div>
 
-          <div class="form-row">
-            <p>B. EXTRACURRICULAR</p>
-            <p><br><br><br><br>What are your hobbies? Write them in the order of your preferences. </p>
-          </div>
-          <div class="form-row">
-            <ol>
-              <li>
-                <input type="text" id="hobby1" name="hobby1" placeholder="Enter your 1st hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby2"ame="hobby2" placeholder="Enter your 2nd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby3"name="hobby3" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby4"name="hobby4" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby5"name="hobby5" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby6"name="hobby6" placeholder="Enter your 1st hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby7"name="hobby7" placeholder="Enter your 2nd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby8"name="hobby8" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby9"name="hobby9" placeholder="Enter your 3rd hobby">
-              </li>
-              <li>
-                <input type="text" id="hobby10"name="hobby10" placeholder="Enter your 3rd hobby">
-              </li>
-            </ol>
-          </div>
-          
-          <div class="form-row">
-            <p>Which of the following organizations have you participated in and which interest you most?</p> 
-          </div>
+                <div class="form-row">
+                    <input type="checkbox" id="mathclub" name="mathclub" value="math-club">
+                    <label for="math-club">Math Club</label><br>
+                    <input type="checkbox" id="englishclub" name="englishclub" value="english-club">
+                    <label for="english-club">English Club</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="debateclub" name="debateclub" value="debate-club">
+                    <label for="debate-club">Debate Club</label>
+                    <input type="checkbox" id="speechclub" name="speechclub" value="speech-club">
+                    <label for="speech-club">Speech Club</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="scienceclub" name="scienceclub" value="science-club">
+                    <label for="science-club">Science Club</label>
+                    <input type="checkbox" id="otherclub" name="otherclub" value="other-club">
+                    <label for="other-club">Other/s, please specify:</label>
+                    <input type="text" id="otherclubtext" name="otherclubtext">
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="quizzerclub" name="quizzerclub" value="quizzer-club">
+                    <label for="quizzer-club">Quizzer's Club</label>
+                </div>
 
-          <div class="form-row">
-            <input type="checkbox" id="athletics" name="althletics" value="athletics">
-            <label for="athletics">Atheletics</label>
-            <input type="checkbox" id="geeclub" name="geeclub" value="geeclub">
-            <label for="geeclub">Geeclub</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="dramatics" name="dramatics" value="dramatics">
-            <label for="dramatics">Dramatics</label>
-            <input type="checkbox" id="scouting" name="scouting" value="scouting">
-            <label for="scouting">Scouting</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="religiousorg" name="religious-org" value="religious-org">
-            <label for="religious-org">Religous Organization</label>
-            <input type="checkbox" id="otherinterest" name="other-interest" value="other-interest">
-            <label for="other-interest">other/s, please specify:</label>          
-          </div>
-          <div class="form-row">
-            <input type="checkbox" id="chessclub" name="chess-club" value="chess-club">
-            <label for="chess-club">Chess Club</label>
-            <input type="text" id="otherinterest" name="other-interest" >
-          </div>
+                <div class="form-row">
+                    <label for="fave-subject">What is/are your favorite subject/s?</label>
+                    <input type="text" id="favesubject" name="favesubject">
+                    <label for="least-fave-subject">What is/are the subject/s you like least?</label>
+                    <input type="text" id="leastfavesubject" name="leastfavesubject">
+                </div>
+                    <p>B. EXTRACURRICULAR</p>
+                <div class="form-row">
+                    
+                    <p>What are your hobbies? Write them in the order of your preferences.</p><br>
+                </div>
 
-          <div class="form-row">
-            <p>Occupational position in the organization:</p> 
-          </div>
-          <div class="form-row">
-            <ul>
-                <li>
-                  <input type="checkbox" id="officer" name="officer" value="officer">
-                  <label for="officer">officer</label>
-                </li>
-                <li>
-                  <input type="checkbox" id="memeber" name="memeber" value="memeber">
-                  <label for="memeber">member</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="otherpost" name="other-post" value="other-post">
-                  <label for="other-post">other/s please specify:
-                    <input type="text" id="otherpost" name="other-post" >
+                <div class="form-row">
+                    <ol>
+                        <li><input type="text" name="hobby1" placeholder="Enter your 1st hobby"></li>
+                        <li><input type="text" name="hobby2" placeholder="Enter your 2nd hobby"></li>
+                        <li><input type="text" name="hobby3" placeholder="Enter your 3rd hobby"></li>
+                        <li><input type="text" name="hobby4" placeholder="Enter your 4th hobby"></li>
+                        <li><input type="text" name="hobby5" placeholder="Enter your 5th hobby"></li>
+                        <li><input type="text" name="hobby6" placeholder="Enter your 6th hobby"></li>
+                        <li><input type="text" name="hobby7" placeholder="Enter your 7th hobby"></li>
+                        <li><input type="text" name="hobby8" placeholder="Enter your 8th hobby"></li>
+                        <li><input type="text" name="hobby9" placeholder="Enter your 9th hobby"></li>
+                        <li><input type="text" name="hobby10" placeholder="Enter your 10th hobby"></li>
+                    </ol>
+                </div>
 
-                  </label>
-                </li>
-                
-              </ul>
-           </div>
-          
+                <div class="form-row">
+                    <p>Which of the following organizations have you participated in and which interest you most?</p>
+                </div>
 
-          </form>
-      </div>
-    </div>
+                <div class="form-row">
+                    <input type="checkbox" id="athletics" name="athletics" value="athletics">
+                    <label for="athletics">Athletics</label>
+                    <input type="checkbox" id="geeclub" name="geeclub" value="geeclub">
+                    <label for="geeclub">Geeclub</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="dramatics" name="dramatics" value="dramatics">
+                    <label for="dramatics">Dramatics</label>
+                    <input type="checkbox" id="scouting" name="scouting" value="scouting">
+                    <label for="scouting">Scouting</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="religiousorg" name="religiousorg" value="religious-org">
+                    <label for="religious-org">Religious Organization</label>
+                    <input type="checkbox" id="otherinterest" name="otherinterest" value="other-interest">
+                    <label for="other-interest">Other/s, please specify:</label>
+                    <input type="text" id="otherinteresttext" name="otherinteresttext">
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="chessclub" name="chessclub" value="chess-club">
+                    <label for="chess-club">Chess Club</label>
+                </div>
 
-    <div class="form-row">
-      <button id="submitform5">Submit and Continue</button> <!--to change yung context;submit/continue-->
-    </div>
-    <div class="footer">
-        <p>Copyright 2024</p>
-      </div> 
-                      
+                <div class="form-row">
+                    <p>Occupational position in the organization:</p>
+                </div>
+
+                <div class="form-row">
+                    
+                        <input type="checkbox" id="officer" name="officer" value="officer">
+                            <label for="officer">Officer</label></li>
+                       <input type="checkbox" id="member" name="member" value="member">
+                            <label for="member">Member</label></li>
+                       <input type="checkbox" id="otherpost" name="otherpost" value="other-post">
+                            <label for="other-post">Other/s, please specify:</label>
+                            <input type="text" id="otherposttext" name="otherposttext">    
+                </div>
+                <div class="form-row button-row">
+                    <button type="button"  onclick="window.location.href='health.html'">Previous</button>
+                    <button type="submit" id="submitform5">Submit and Continue</button>
+                </div>
+                </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 PUP Office of Counseling and Psychological Services. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 </html>

@@ -130,3 +130,16 @@ submitButton3.addEventListener("click", function(event) {
    window.location.href = "health.html"; 
 
 });
+
+
+function showConfirmationDialog(event) {
+    event.preventDefault();
+    const confirmation = confirm("Do you really want to leave this page? Your progress will not be saved.");
+    if (confirmation) {
+      window.location.href = event.target.href;
+    }
+  }
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', showConfirmationDialog);
+  });
