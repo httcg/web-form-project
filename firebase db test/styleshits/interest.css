@@ -175,9 +175,6 @@ header {
   align-self: flex-start; /* Align to the left */
 }
 
-.continue-button {
-  align-self: flex-end; /* Align to the right */
-}
 
 .form-row button {
   padding: 0.75rem 1rem;
