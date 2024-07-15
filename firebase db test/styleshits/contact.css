@@ -97,11 +97,23 @@ header {
   color: white;
   max-width: 600px;
   padding: 20px;
+  animation: fadeInUp 2s ease-out;
 }
 
 .contact-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  animation: fadeInUp 2s ease-out;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contact-text p {

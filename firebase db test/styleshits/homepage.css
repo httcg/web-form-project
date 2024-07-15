@@ -74,6 +74,7 @@ header {
   padding: 15px;
   color: white;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navmenu li a {
@@ -106,6 +107,18 @@ header {
   margin-top: 150px;
   margin-bottom: 5px;
   color: white;
+  animation: fadeInUp 2s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .About,
@@ -116,12 +129,12 @@ header {
   padding: 30px;
   color: white;
   background-color: rgba(170, 91, 91, 0.86);
-  border: rgba(170, 91, 91, 0.86);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 130%;
+  width: 100%;
   max-width: 800px;
   margin-bottom: 10px;
+  animation: slideIn 1s ease-out forwards;
 }
 
 .About span,
@@ -148,18 +161,33 @@ ul {
 }
 
 footer {
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
-    margin: 0;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 500;
+  margin: 0;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

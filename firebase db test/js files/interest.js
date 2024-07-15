@@ -37,7 +37,8 @@ submitButton5.addEventListener("click", function(event) {
     });
 
     setTimeout(() => {
-        window.location.href = "result.html";
+      alert("Your form has been successfully submitted.");
+      window.location.href = "result.html";
     }, 1000);
 });
 

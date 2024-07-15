@@ -167,7 +167,7 @@ header {
   background-color: #d88d8d;
 }.form-row.button-row {
   display: flex;
-  justify-content: space-between; /* Distribute buttons to opposite ends */
+  justify-content: space-between; 
   margin-top: 20px; /* Adjust margin as needed */
 }
 
@@ -176,8 +176,12 @@ header {
 }
 
 
+.button-container {
+  text-align: right;
+}
+
 .form-row button {
-  padding: 0.75rem 1rem;
+  padding: 10px 20px;
   background-color: rgba(211, 114, 114, 0.86);
   color: white;
   border: none;
